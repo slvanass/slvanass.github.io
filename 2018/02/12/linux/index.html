@@ -1,0 +1,504 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>linux学习笔记 | liuwc&#39;s blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="liuwc">
+    
+
+    
+    <meta name="description" content="linux 保存命令12345678:w   保存文件但不退出vi :w file 将修改另外保存到file中，不退出vi :w!  强制保存，不推出vi:wq  保存文件并退出vi :wq! 强制保存文件，并退出vi:q 不保存文件，退出vi:q!不保存文件，强制退出vi :e! 放弃所有修改，从上次保存文件开始再编辑 ssh连接服务器1ssh name@ip 编辑.bash_profile1v">
+<meta property="og:type" content="article">
+<meta property="og:title" content="linux学习笔记">
+<meta property="og:url" content="http://www.liuwc.com/2018/02/12/linux/index.html">
+<meta property="og:site_name" content="liuwc&#39;s blog">
+<meta property="og:description" content="linux 保存命令12345678:w   保存文件但不退出vi :w file 将修改另外保存到file中，不退出vi :w!  强制保存，不推出vi:wq  保存文件并退出vi :wq! 强制保存文件，并退出vi:q 不保存文件，退出vi:q!不保存文件，强制退出vi :e! 放弃所有修改，从上次保存文件开始再编辑 ssh连接服务器1ssh name@ip 编辑.bash_profile1v">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-02-12T02:03:11.800Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="linux学习笔记">
+<meta name="twitter:description" content="linux 保存命令12345678:w   保存文件但不退出vi :w file 将修改另外保存到file中，不退出vi :w!  强制保存，不推出vi:wq  保存文件并退出vi :wq! 强制保存文件，并退出vi:q 不保存文件，退出vi:q!不保存文件，强制退出vi :e! 放弃所有修改，从上次保存文件开始再编辑 ssh连接服务器1ssh name@ip 编辑.bash_profile1v">
+
+    
+    <link rel="alternative" href="/atom.xml" title="liuwc&#39;s blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="liuwc&#39;s blog">liuwc&#39;s blog</a></h1>
+				<h2 class="blog-motto"></h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:www.liuwc.com">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2018/02/12/linux/" title="linux学习笔记" itemprop="url">linux学习笔记</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="liuwc" target="_blank" itemprop="author">liuwc</a>
+		
+  <p class="article-time">
+    <time datetime="2018-02-12T01:58:10.000Z" itemprop="datePublished"> 發表於 2018-02-12</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#linux-保存命令"><span class="toc-number">1.</span> <span class="toc-text">linux 保存命令</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#ssh连接服务器"><span class="toc-number">2.</span> <span class="toc-text">ssh连接服务器</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#编辑-bash-profile"><span class="toc-number">3.</span> <span class="toc-text">编辑.bash_profile</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#查看ip地址"><span class="toc-number">4.</span> <span class="toc-text">查看ip地址</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#下载node-js"><span class="toc-number">5.</span> <span class="toc-text">下载node.js</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#解压压缩包"><span class="toc-number">6.</span> <span class="toc-text">解压压缩包</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#返回根目录"><span class="toc-number">7.</span> <span class="toc-text">返回根目录</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#查看当前目录路径"><span class="toc-number">8.</span> <span class="toc-text">查看当前目录路径</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#重新加载配置文件"><span class="toc-number">9.</span> <span class="toc-text">重新加载配置文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装-webpack"><span class="toc-number">10.</span> <span class="toc-text">安装 webpack</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装ruby"><span class="toc-number">11.</span> <span class="toc-text">安装ruby</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装sass"><span class="toc-number">12.</span> <span class="toc-text">安装sass</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#提升自己权限为root"><span class="toc-number">13.</span> <span class="toc-text">提升自己权限为root</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#查看某文件夹权限"><span class="toc-number">14.</span> <span class="toc-text">查看某文件夹权限</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#修改文件夹下权限支持写入权限"><span class="toc-number">15.</span> <span class="toc-text">修改文件夹下权限支持写入权限</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#删除一个文件夹"><span class="toc-number">16.</span> <span class="toc-text">删除一个文件夹</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#生成公钥"><span class="toc-number">17.</span> <span class="toc-text">生成公钥</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#生成ssh-id"><span class="toc-number">18.</span> <span class="toc-text">生成ssh_id</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#从git上克隆项目"><span class="toc-number">19.</span> <span class="toc-text">从git上克隆项目</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#linux普通用户赋予root权限"><span class="toc-number">20.</span> <span class="toc-text">linux普通用户赋予root权限</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#linux创建一个新用户并赋予sodu权限"><span class="toc-number">21.</span> <span class="toc-text">linux创建一个新用户并赋予sodu权限</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#linxu赋予文件写的权限"><span class="toc-number">22.</span> <span class="toc-text">linxu赋予文件写的权限</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#以默认路径安装rpm文件"><span class="toc-number">23.</span> <span class="toc-text">以默认路径安装rpm文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#返回上一级目录"><span class="toc-number">24.</span> <span class="toc-text">返回上一级目录</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#剪切文件到某目录"><span class="toc-number">25.</span> <span class="toc-text">剪切文件到某目录</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#在vim中查询关键字"><span class="toc-number">26.</span> <span class="toc-text">在vim中查询关键字</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#在vim中取消关键字高亮"><span class="toc-number">27.</span> <span class="toc-text">在vim中取消关键字高亮</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#vim中编辑"><span class="toc-number">28.</span> <span class="toc-text">vim中编辑</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#查看tomcat的进程号"><span class="toc-number">29.</span> <span class="toc-text">查看tomcat的进程号</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#杀死进程"><span class="toc-number">30.</span> <span class="toc-text">杀死进程</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#创建一个专用管理某文件夹的用户"><span class="toc-number">31.</span> <span class="toc-text">创建一个专用管理某文件夹的用户</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#赋予用户文件夹的权限"><span class="toc-number">32.</span> <span class="toc-text">赋予用户文件夹的权限</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#重置用户密码"><span class="toc-number">33.</span> <span class="toc-text">重置用户密码</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#linux默认安装路径"><span class="toc-number">34.</span> <span class="toc-text">linux默认安装路径</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#将匿名用户放入chroot-list"><span class="toc-number">35.</span> <span class="toc-text">将匿名用户放入chroot_list</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#修改安全策略为disabled"><span class="toc-number">36.</span> <span class="toc-text">修改安全策略为disabled</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#防止500错误-与上述效果一样"><span class="toc-number">37.</span> <span class="toc-text">防止500错误,与上述效果一样</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#展示配置文件中的行号"><span class="toc-number">38.</span> <span class="toc-text">展示配置文件中的行号</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装mysql"><span class="toc-number">39.</span> <span class="toc-text">安装mysql</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#配置mysql的自启动"><span class="toc-number">40.</span> <span class="toc-text">配置mysql的自启动</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#重启mysql"><span class="toc-number">41.</span> <span class="toc-text">重启mysql</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#登录mysql"><span class="toc-number">42.</span> <span class="toc-text">登录mysql</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#mysql修改用户密码"><span class="toc-number">43.</span> <span class="toc-text">mysql修改用户密码</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#删除mysql匿名用户"><span class="toc-number">44.</span> <span class="toc-text">删除mysql匿名用户</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#新增用户"><span class="toc-number">45.</span> <span class="toc-text">新增用户</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#mysql创建库"><span class="toc-number">46.</span> <span class="toc-text">mysql创建库</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#刷新库"><span class="toc-number">47.</span> <span class="toc-text">刷新库</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#导入MySQL文件"><span class="toc-number">48.</span> <span class="toc-text">导入MySQL文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#查询表数据并进行格式化"><span class="toc-number">49.</span> <span class="toc-text">查询表数据并进行格式化</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#防火墙目录"><span class="toc-number">50.</span> <span class="toc-text">防火墙目录</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#查看有关防火墙的配置文件"><span class="toc-number">51.</span> <span class="toc-text">查看有关防火墙的配置文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#初始化防火墙"><span class="toc-number">52.</span> <span class="toc-text">初始化防火墙</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#保存防火墙配置"><span class="toc-number">53.</span> <span class="toc-text">保存防火墙配置</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#编辑iptables修改开发端口"><span class="toc-number">54.</span> <span class="toc-text">编辑iptables修改开发端口</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#关闭防火墙"><span class="toc-number">55.</span> <span class="toc-text">关闭防火墙</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#重启防火墙服务"><span class="toc-number">56.</span> <span class="toc-text">重启防火墙服务</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#启动vsftpd服务"><span class="toc-number">57.</span> <span class="toc-text">启动vsftpd服务</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#查看tomcat日志"><span class="toc-number">58.</span> <span class="toc-text">查看tomcat日志</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#访问url"><span class="toc-number">59.</span> <span class="toc-text">访问url</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#复制文件"><span class="toc-number">60.</span> <span class="toc-text">复制文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#nginx测试配置文件"><span class="toc-number">61.</span> <span class="toc-text">nginx测试配置文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#nginx重新加载配置文件"><span class="toc-number">62.</span> <span class="toc-text">nginx重新加载配置文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#将自己账号放在对应用户组下"><span class="toc-number">63.</span> <span class="toc-text">将自己账号放在对应用户组下</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#ls-ls-a-ls-al的区别"><span class="toc-number">64.</span> <span class="toc-text">ls,ls -a,ls -al的区别</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#将某文件夹权限改为775-写入权限"><span class="toc-number">65.</span> <span class="toc-text">将某文件夹权限改为775(写入权限)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#vim全局替换字符串"><span class="toc-number">66.</span> <span class="toc-text">vim全局替换字符串</span></a></li></ol>
+		
+		</div>
+		
+		<h1 id="linux-保存命令"><a href="#linux-保存命令" class="headerlink" title="linux 保存命令"></a>linux 保存命令</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">:w   保存文件但不退出vi </span><br><span class="line">:w file 将修改另外保存到file中，不退出vi </span><br><span class="line">:w!  强制保存，不推出vi</span><br><span class="line">:wq  保存文件并退出vi </span><br><span class="line">:wq! 强制保存文件，并退出vi</span><br><span class="line">:q 不保存文件，退出vi</span><br><span class="line">:q!不保存文件，强制退出vi </span><br><span class="line">:e! 放弃所有修改，从上次保存文件开始再编辑</span><br></pre></td></tr></table></figure>
+<h1 id="ssh连接服务器"><a href="#ssh连接服务器" class="headerlink" title="ssh连接服务器"></a>ssh连接服务器</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh name<span class="meta">@ip</span></span><br></pre></td></tr></table></figure>
+<h1 id="编辑-bash-profile"><a href="#编辑-bash-profile" class="headerlink" title="编辑.bash_profile"></a>编辑.bash_profile</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim .bash_profile</span><br></pre></td></tr></table></figure>
+<h1 id="查看ip地址"><a href="#查看ip地址" class="headerlink" title="查看ip地址"></a>查看ip地址</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Ifconfig</span><br><span class="line">Ifconfig | grep 地址号</span><br></pre></td></tr></table></figure>
+<h1 id="下载node-js"><a href="#下载node-js" class="headerlink" title="下载node.js"></a>下载node.js</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget (url)</span><br></pre></td></tr></table></figure>
+<h1 id="解压压缩包"><a href="#解压压缩包" class="headerlink" title="解压压缩包"></a>解压压缩包</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -xzvf (压缩包名) ----解压到当前目录</span><br></pre></td></tr></table></figure>
+<h1 id="返回根目录"><a href="#返回根目录" class="headerlink" title="返回根目录"></a>返回根目录</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd ..</span><br></pre></td></tr></table></figure>
+<h1 id="查看当前目录路径"><a href="#查看当前目录路径" class="headerlink" title="查看当前目录路径"></a>查看当前目录路径</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pwd</span><br></pre></td></tr></table></figure>
+<h1 id="重新加载配置文件"><a href="#重新加载配置文件" class="headerlink" title="重新加载配置文件"></a>重新加载配置文件</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source 配置文件路径</span><br></pre></td></tr></table></figure>
+<h1 id="安装-webpack"><a href="#安装-webpack" class="headerlink" title="安装 webpack"></a>安装 webpack</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install webpack -g --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<h1 id="安装ruby"><a href="#安装ruby" class="headerlink" title="安装ruby"></a>安装ruby</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install ruby</span><br></pre></td></tr></table></figure>
+<h1 id="安装sass"><a href="#安装sass" class="headerlink" title="安装sass"></a>安装sass</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo su -c  “gem install sass”</span><br></pre></td></tr></table></figure>
+<h1 id="提升自己权限为root"><a href="#提升自己权限为root" class="headerlink" title="提升自己权限为root"></a>提升自己权限为root</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo usermod -g root 用户名</span><br></pre></td></tr></table></figure>
+<h1 id="查看某文件夹权限"><a href="#查看某文件夹权限" class="headerlink" title="查看某文件夹权限"></a>查看某文件夹权限</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -al | grep 文件夹名称</span><br></pre></td></tr></table></figure>
+<h1 id="修改文件夹下权限支持写入权限"><a href="#修改文件夹下权限支持写入权限" class="headerlink" title="修改文件夹下权限支持写入权限"></a>修改文件夹下权限支持写入权限</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Chmod -R 775 文件夹名称/</span><br></pre></td></tr></table></figure>
+<h1 id="删除一个文件夹"><a href="#删除一个文件夹" class="headerlink" title="删除一个文件夹"></a>删除一个文件夹</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -rf 文件夹名称</span><br></pre></td></tr></table></figure>
+<h1 id="生成公钥"><a href="#生成公钥" class="headerlink" title="生成公钥"></a>生成公钥</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Ssh -keygen -t rsa -C ‘liuwenchang1995@qq.com’</span><br></pre></td></tr></table></figure>
+<h1 id="生成ssh-id"><a href="#生成ssh-id" class="headerlink" title="生成ssh_id"></a>生成ssh_id</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat  ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+<h1 id="从git上克隆项目"><a href="#从git上克隆项目" class="headerlink" title="从git上克隆项目"></a>从git上克隆项目</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone 项目地址(下载到当前目录)</span><br></pre></td></tr></table></figure>
+<h1 id="linux普通用户赋予root权限"><a href="#linux普通用户赋予root权限" class="headerlink" title="linux普通用户赋予root权限"></a>linux普通用户赋予root权限</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">su root</span><br><span class="line">输入密码</span><br></pre></td></tr></table></figure>
+<h1 id="linux创建一个新用户并赋予sodu权限"><a href="#linux创建一个新用户并赋予sodu权限" class="headerlink" title="linux创建一个新用户并赋予sodu权限"></a>linux创建一个新用户并赋予sodu权限</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">useradd -d /usr/用户名 -m 用户名</span><br></pre></td></tr></table></figure>
+<h1 id="linxu赋予文件写的权限"><a href="#linxu赋予文件写的权限" class="headerlink" title="linxu赋予文件写的权限"></a>linxu赋予文件写的权限</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chmod  777  文件名</span><br></pre></td></tr></table></figure>
+<h1 id="以默认路径安装rpm文件"><a href="#以默认路径安装rpm文件" class="headerlink" title="以默认路径安装rpm文件"></a>以默认路径安装rpm文件</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo rpm -ivh 文件名</span><br></pre></td></tr></table></figure>
+<h1 id="返回上一级目录"><a href="#返回上一级目录" class="headerlink" title="返回上一级目录"></a>返回上一级目录</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd ..</span><br></pre></td></tr></table></figure>
+<h1 id="剪切文件到某目录"><a href="#剪切文件到某目录" class="headerlink" title="剪切文件到某目录"></a>剪切文件到某目录</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv 文件名 目录</span><br></pre></td></tr></table></figure>
+<h1 id="在vim中查询关键字"><a href="#在vim中查询关键字" class="headerlink" title="在vim中查询关键字"></a>在vim中查询关键字</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">输入/+关键字内容 敲回车</span><br></pre></td></tr></table></figure>
+<h1 id="在vim中取消关键字高亮"><a href="#在vim中取消关键字高亮" class="headerlink" title="在vim中取消关键字高亮"></a>在vim中取消关键字高亮</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:noh</span><br></pre></td></tr></table></figure>
+<h1 id="vim中编辑"><a href="#vim中编辑" class="headerlink" title="vim中编辑"></a>vim中编辑</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">按下i，开始编辑</span><br></pre></td></tr></table></figure>
+<h1 id="查看tomcat的进程号"><a href="#查看tomcat的进程号" class="headerlink" title="查看tomcat的进程号"></a>查看tomcat的进程号</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps -ef |grep tomcat</span><br></pre></td></tr></table></figure>
+<h1 id="杀死进程"><a href="#杀死进程" class="headerlink" title="杀死进程"></a>杀死进程</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kill -9 -进程号</span><br></pre></td></tr></table></figure>
+<h1 id="创建一个专用管理某文件夹的用户"><a href="#创建一个专用管理某文件夹的用户" class="headerlink" title="创建一个专用管理某文件夹的用户"></a>创建一个专用管理某文件夹的用户</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo useradd ftpuser -d /product/ftpfile -s /sbin/nologin</span><br></pre></td></tr></table></figure>
+<h1 id="赋予用户文件夹的权限"><a href="#赋予用户文件夹的权限" class="headerlink" title="赋予用户文件夹的权限"></a>赋予用户文件夹的权限</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chown -R 用户组.用户 文件目录</span><br></pre></td></tr></table></figure>
+<h1 id="重置用户密码"><a href="#重置用户密码" class="headerlink" title="重置用户密码"></a>重置用户密码</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo passwd 用户名</span><br></pre></td></tr></table></figure>
+<h1 id="linux默认安装路径"><a href="#linux默认安装路径" class="headerlink" title="linux默认安装路径"></a>linux默认安装路径</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/etc/。。。</span><br></pre></td></tr></table></figure>
+<h1 id="将匿名用户放入chroot-list"><a href="#将匿名用户放入chroot-list" class="headerlink" title="将匿名用户放入chroot_list"></a>将匿名用户放入chroot_list</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/vsftpd/chroot_list</span><br></pre></td></tr></table></figure>
+<h1 id="修改安全策略为disabled"><a href="#修改安全策略为disabled" class="headerlink" title="修改安全策略为disabled"></a>修改安全策略为disabled</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/selinux/config</span><br></pre></td></tr></table></figure>
+<h1 id="防止500错误-与上述效果一样"><a href="#防止500错误-与上述效果一样" class="headerlink" title="防止500错误,与上述效果一样"></a>防止500错误,与上述效果一样</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Sudo setsebool -P ftp_home_dir 1</span><br></pre></td></tr></table></figure>
+<h1 id="展示配置文件中的行号"><a href="#展示配置文件中的行号" class="headerlink" title="展示配置文件中的行号"></a>展示配置文件中的行号</h1><p>…ban<br>:set number<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#  查看有没有安装mysql</span><br><span class="line">```ban</span><br><span class="line">sudo rpm -qa| grep mysql-server</span><br></pre></td></tr></table></figure></p>
+<h1 id="安装mysql"><a href="#安装mysql" class="headerlink" title="安装mysql"></a>安装mysql</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum -y install mysql-server</span><br></pre></td></tr></table></figure>
+<h1 id="配置mysql的自启动"><a href="#配置mysql的自启动" class="headerlink" title="配置mysql的自启动"></a>配置mysql的自启动</h1><p>…ban<br>chkconfig mysqld on<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#  查看mysql是否自启动</span><br><span class="line">```ban</span><br><span class="line">chkconfig --list mysqld(2.3.4.5 on为自启动)</span><br></pre></td></tr></table></figure></p>
+<h1 id="重启mysql"><a href="#重启mysql" class="headerlink" title="重启mysql"></a>重启mysql</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service mysqld restart</span><br></pre></td></tr></table></figure>
+<h1 id="登录mysql"><a href="#登录mysql" class="headerlink" title="登录mysql"></a>登录mysql</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Mysql -u -root</span><br></pre></td></tr></table></figure>
+<h1 id="mysql修改用户密码"><a href="#mysql修改用户密码" class="headerlink" title="mysql修改用户密码"></a>mysql修改用户密码</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set password for root@localhost = password(&apos;rootpassword&apos;);</span><br></pre></td></tr></table></figure>
+<h1 id="删除mysql匿名用户"><a href="#删除mysql匿名用户" class="headerlink" title="删除mysql匿名用户"></a>删除mysql匿名用户</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">delete from mysql.user where user=&apos;&apos;;</span><br></pre></td></tr></table></figure>
+<h1 id="新增用户"><a href="#新增用户" class="headerlink" title="新增用户"></a>新增用户</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Insert into mysql.user(host,user,password)values(&quot;localhost&quot;,&quot;mmall&quot;,password(&quot;mmallpassword&quot;));</span><br></pre></td></tr></table></figure>
+<h1 id="mysql创建库"><a href="#mysql创建库" class="headerlink" title="mysql创建库"></a>mysql创建库</h1><p>…ban<br>Create database <code>mmall</code> default character set utf8 COLLATE utf8_general_ci;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#  赋予mysql数据库所有操作权限和密码</span><br><span class="line">```ban</span><br><span class="line">grant all privileges on mmall.* to mmall@localhost identified by &apos;mmallpassword&apos;;</span><br></pre></td></tr></table></figure></p>
+<h1 id="刷新库"><a href="#刷新库" class="headerlink" title="刷新库"></a>刷新库</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flush privileges;</span><br></pre></td></tr></table></figure>
+<h1 id="导入MySQL文件"><a href="#导入MySQL文件" class="headerlink" title="导入MySQL文件"></a>导入MySQL文件</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Source sql文件路径</span><br></pre></td></tr></table></figure>
+<h1 id="查询表数据并进行格式化"><a href="#查询表数据并进行格式化" class="headerlink" title="查询表数据并进行格式化"></a>查询表数据并进行格式化</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from mmall_user\G;</span><br></pre></td></tr></table></figure>
+<h1 id="防火墙目录"><a href="#防火墙目录" class="headerlink" title="防火墙目录"></a>防火墙目录</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Vim /etc/sysconfig/iptables</span><br></pre></td></tr></table></figure>
+<h1 id="查看有关防火墙的配置文件"><a href="#查看有关防火墙的配置文件" class="headerlink" title="查看有关防火墙的配置文件"></a>查看有关防火墙的配置文件</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ll | grep ipt</span><br></pre></td></tr></table></figure>
+<h1 id="初始化防火墙"><a href="#初始化防火墙" class="headerlink" title="初始化防火墙"></a>初始化防火墙</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo iptables -P -OUTPUT ACCEPT</span><br></pre></td></tr></table></figure>
+<h1 id="保存防火墙配置"><a href="#保存防火墙配置" class="headerlink" title="保存防火墙配置"></a>保存防火墙配置</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo service iptables save</span><br></pre></td></tr></table></figure>
+<h1 id="编辑iptables修改开发端口"><a href="#编辑iptables修改开发端口" class="headerlink" title="编辑iptables修改开发端口"></a>编辑iptables修改开发端口</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim iptables</span><br></pre></td></tr></table></figure>
+<h1 id="关闭防火墙"><a href="#关闭防火墙" class="headerlink" title="关闭防火墙"></a>关闭防火墙</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service iptables stop</span><br></pre></td></tr></table></figure>
+<h1 id="重启防火墙服务"><a href="#重启防火墙服务" class="headerlink" title="重启防火墙服务"></a>重启防火墙服务</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo service iptables restart</span><br></pre></td></tr></table></figure>
+<h1 id="启动vsftpd服务"><a href="#启动vsftpd服务" class="headerlink" title="启动vsftpd服务"></a>启动vsftpd服务</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo service vsftpd start</span><br></pre></td></tr></table></figure>
+<h1 id="查看tomcat日志"><a href="#查看tomcat日志" class="headerlink" title="查看tomcat日志"></a>查看tomcat日志</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tailf logs/catalina.out</span><br></pre></td></tr></table></figure>
+<h1 id="访问url"><a href="#访问url" class="headerlink" title="访问url"></a>访问url</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl url地址(比如localhost)</span><br></pre></td></tr></table></figure>
+<h1 id="复制文件"><a href="#复制文件" class="headerlink" title="复制文件"></a>复制文件</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp -r 文件名 文件目录</span><br></pre></td></tr></table></figure>
+<h1 id="nginx测试配置文件"><a href="#nginx测试配置文件" class="headerlink" title="nginx测试配置文件"></a>nginx测试配置文件</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./nginx -t</span><br></pre></td></tr></table></figure>
+<h1 id="nginx重新加载配置文件"><a href="#nginx重新加载配置文件" class="headerlink" title="nginx重新加载配置文件"></a>nginx重新加载配置文件</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./nginx -s reload</span><br></pre></td></tr></table></figure>
+<h1 id="将自己账号放在对应用户组下"><a href="#将自己账号放在对应用户组下" class="headerlink" title="将自己账号放在对应用户组下"></a>将自己账号放在对应用户组下</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">usermod -g root(用户组名称) rosen(用户名)</span><br></pre></td></tr></table></figure>
+<h1 id="ls-ls-a-ls-al的区别"><a href="#ls-ls-a-ls-al的区别" class="headerlink" title="ls,ls -a,ls -al的区别"></a>ls,ls -a,ls -al的区别</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ls 显示当前下面的文件及文件夹</span><br><span class="line">ls -a 显示当前目录下的所有文件及文件夹包括隐藏的.和..等</span><br><span class="line">ls -al 显示当前目录下的所有文件及文件夹包括隐藏的.和..等并显示详细信息，详细信息包括大小，属组，创建时间</span><br></pre></td></tr></table></figure>
+<h1 id="将某文件夹权限改为775-写入权限"><a href="#将某文件夹权限改为775-写入权限" class="headerlink" title="将某文件夹权限改为775(写入权限)"></a>将某文件夹权限改为775(写入权限)</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod -R 775 developer/(文件夹名)</span><br></pre></td></tr></table></figure>
+<h1 id="vim全局替换字符串"><a href="#vim全局替换字符串" class="headerlink" title="vim全局替换字符串"></a>vim全局替换字符串</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">查找替换:%s/old/new/g 全文替换指定字符串  old代表要被替换的字符串 new代表要替换成的字符串 最后的g代表不用提示确认，如果需要提示确认操作的话，把g改为c。</span><br></pre></td></tr></table></figure>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://www.liuwc.com/2018/02/12/linux/" data-title="linux学习笔记 | liuwc&#39;s blog" data-tsina="" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2018/02/12/git/" title="git学习笔记">
+  <strong>上一篇：</strong><br/>
+  <span>
+  git学习笔记</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2018/01/19/your-titile/"  title="Gallery">
+ <strong>下一篇：</strong><br/> 
+ <span>Gallery
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#linux-保存命令"><span class="toc-number">1.</span> <span class="toc-text">linux 保存命令</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#ssh连接服务器"><span class="toc-number">2.</span> <span class="toc-text">ssh连接服务器</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#编辑-bash-profile"><span class="toc-number">3.</span> <span class="toc-text">编辑.bash_profile</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#查看ip地址"><span class="toc-number">4.</span> <span class="toc-text">查看ip地址</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#下载node-js"><span class="toc-number">5.</span> <span class="toc-text">下载node.js</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#解压压缩包"><span class="toc-number">6.</span> <span class="toc-text">解压压缩包</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#返回根目录"><span class="toc-number">7.</span> <span class="toc-text">返回根目录</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#查看当前目录路径"><span class="toc-number">8.</span> <span class="toc-text">查看当前目录路径</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#重新加载配置文件"><span class="toc-number">9.</span> <span class="toc-text">重新加载配置文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装-webpack"><span class="toc-number">10.</span> <span class="toc-text">安装 webpack</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装ruby"><span class="toc-number">11.</span> <span class="toc-text">安装ruby</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装sass"><span class="toc-number">12.</span> <span class="toc-text">安装sass</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#提升自己权限为root"><span class="toc-number">13.</span> <span class="toc-text">提升自己权限为root</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#查看某文件夹权限"><span class="toc-number">14.</span> <span class="toc-text">查看某文件夹权限</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#修改文件夹下权限支持写入权限"><span class="toc-number">15.</span> <span class="toc-text">修改文件夹下权限支持写入权限</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#删除一个文件夹"><span class="toc-number">16.</span> <span class="toc-text">删除一个文件夹</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#生成公钥"><span class="toc-number">17.</span> <span class="toc-text">生成公钥</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#生成ssh-id"><span class="toc-number">18.</span> <span class="toc-text">生成ssh_id</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#从git上克隆项目"><span class="toc-number">19.</span> <span class="toc-text">从git上克隆项目</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#linux普通用户赋予root权限"><span class="toc-number">20.</span> <span class="toc-text">linux普通用户赋予root权限</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#linux创建一个新用户并赋予sodu权限"><span class="toc-number">21.</span> <span class="toc-text">linux创建一个新用户并赋予sodu权限</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#linxu赋予文件写的权限"><span class="toc-number">22.</span> <span class="toc-text">linxu赋予文件写的权限</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#以默认路径安装rpm文件"><span class="toc-number">23.</span> <span class="toc-text">以默认路径安装rpm文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#返回上一级目录"><span class="toc-number">24.</span> <span class="toc-text">返回上一级目录</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#剪切文件到某目录"><span class="toc-number">25.</span> <span class="toc-text">剪切文件到某目录</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#在vim中查询关键字"><span class="toc-number">26.</span> <span class="toc-text">在vim中查询关键字</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#在vim中取消关键字高亮"><span class="toc-number">27.</span> <span class="toc-text">在vim中取消关键字高亮</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#vim中编辑"><span class="toc-number">28.</span> <span class="toc-text">vim中编辑</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#查看tomcat的进程号"><span class="toc-number">29.</span> <span class="toc-text">查看tomcat的进程号</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#杀死进程"><span class="toc-number">30.</span> <span class="toc-text">杀死进程</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#创建一个专用管理某文件夹的用户"><span class="toc-number">31.</span> <span class="toc-text">创建一个专用管理某文件夹的用户</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#赋予用户文件夹的权限"><span class="toc-number">32.</span> <span class="toc-text">赋予用户文件夹的权限</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#重置用户密码"><span class="toc-number">33.</span> <span class="toc-text">重置用户密码</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#linux默认安装路径"><span class="toc-number">34.</span> <span class="toc-text">linux默认安装路径</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#将匿名用户放入chroot-list"><span class="toc-number">35.</span> <span class="toc-text">将匿名用户放入chroot_list</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#修改安全策略为disabled"><span class="toc-number">36.</span> <span class="toc-text">修改安全策略为disabled</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#防止500错误-与上述效果一样"><span class="toc-number">37.</span> <span class="toc-text">防止500错误,与上述效果一样</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#展示配置文件中的行号"><span class="toc-number">38.</span> <span class="toc-text">展示配置文件中的行号</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装mysql"><span class="toc-number">39.</span> <span class="toc-text">安装mysql</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#配置mysql的自启动"><span class="toc-number">40.</span> <span class="toc-text">配置mysql的自启动</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#重启mysql"><span class="toc-number">41.</span> <span class="toc-text">重启mysql</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#登录mysql"><span class="toc-number">42.</span> <span class="toc-text">登录mysql</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#mysql修改用户密码"><span class="toc-number">43.</span> <span class="toc-text">mysql修改用户密码</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#删除mysql匿名用户"><span class="toc-number">44.</span> <span class="toc-text">删除mysql匿名用户</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#新增用户"><span class="toc-number">45.</span> <span class="toc-text">新增用户</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#mysql创建库"><span class="toc-number">46.</span> <span class="toc-text">mysql创建库</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#刷新库"><span class="toc-number">47.</span> <span class="toc-text">刷新库</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#导入MySQL文件"><span class="toc-number">48.</span> <span class="toc-text">导入MySQL文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#查询表数据并进行格式化"><span class="toc-number">49.</span> <span class="toc-text">查询表数据并进行格式化</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#防火墙目录"><span class="toc-number">50.</span> <span class="toc-text">防火墙目录</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#查看有关防火墙的配置文件"><span class="toc-number">51.</span> <span class="toc-text">查看有关防火墙的配置文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#初始化防火墙"><span class="toc-number">52.</span> <span class="toc-text">初始化防火墙</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#保存防火墙配置"><span class="toc-number">53.</span> <span class="toc-text">保存防火墙配置</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#编辑iptables修改开发端口"><span class="toc-number">54.</span> <span class="toc-text">编辑iptables修改开发端口</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#关闭防火墙"><span class="toc-number">55.</span> <span class="toc-text">关闭防火墙</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#重启防火墙服务"><span class="toc-number">56.</span> <span class="toc-text">重启防火墙服务</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#启动vsftpd服务"><span class="toc-number">57.</span> <span class="toc-text">启动vsftpd服务</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#查看tomcat日志"><span class="toc-number">58.</span> <span class="toc-text">查看tomcat日志</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#访问url"><span class="toc-number">59.</span> <span class="toc-text">访问url</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#复制文件"><span class="toc-number">60.</span> <span class="toc-text">复制文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#nginx测试配置文件"><span class="toc-number">61.</span> <span class="toc-text">nginx测试配置文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#nginx重新加载配置文件"><span class="toc-number">62.</span> <span class="toc-text">nginx重新加载配置文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#将自己账号放在对应用户组下"><span class="toc-number">63.</span> <span class="toc-text">将自己账号放在对应用户组下</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#ls-ls-a-ls-al的区别"><span class="toc-number">64.</span> <span class="toc-text">ls,ls -a,ls -al的区别</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#将某文件夹权限改为775-写入权限"><span class="toc-number">65.</span> <span class="toc-text">将某文件夹权限改为775(写入权限)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#vim全局替换字符串"><span class="toc-number">66.</span> <span class="toc-text">vim全局替换字符串</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<aside class="clearfix">
+
+  
+<div class="github-card">
+<p class="asidetitle">Github 名片</p>
+<div class="github-card" data-github="slvanass" data-theme="medium"></div>
+<script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
+</div>
+
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+</div>
+
+  
+
+  
+
+  <div class="linkslist">
+  <p class="asidetitle">友情鏈接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://coderq.com" target="_blank" title="一个面向程序员交流分享的新一代社区">码农圈</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://wuchong.me" target="_blank" title="Jark&#39;s Blog">Jark&#39;s Blog</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m liuwc <br/>
+			Welcome to my blog</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/2176287895" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/slvanass" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2018 
+		
+		<a href="/about" target="_blank" title="liuwc">liuwc</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?e6d1f421bbc9962127a50488f9ed37d1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>
