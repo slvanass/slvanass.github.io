@@ -4,26 +4,27 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Gallery | liuwc&#39;s blog</title>
+    <title>容器 | liuwc&#39;s blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="liuwc">
     
 
     
-    <meta name="description" content="Nunc dignissim volutpat enim, non sollicitudin purus dignissim id. Nam sit amet urna eu velit lacinia eleifend. Proin auctor rhoncus ligula nec aliquet. Donec sodales molestie lacinia. Curabitur dictu">
+    <meta name="description" content="Collection的概念1.Collection表示一组对象，它是集中，收集的意思，就是把一些数据收集起来。2.Collection函数库是在java.util包下的一些接口和类，类是用来产生对象存放数据用的，而接口是访问数据的方式。3.Collection函数库与数组的两点不同：    1)数组的容量是有限制的，而Collecyion库没有这样的限制，它容量可以自动的调节。    2)Coll">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Gallery">
-<meta property="og:url" content="http://www.liuwc.com/2018/01/19/your-titile/index.html">
+<meta property="og:title" content="容器">
+<meta property="og:url" content="http://www.liuwc.com/2018/02/12/container/index.html">
 <meta property="og:site_name" content="liuwc&#39;s blog">
-<meta property="og:description" content="Nunc dignissim volutpat enim, non sollicitudin purus dignissim id. Nam sit amet urna eu velit lacinia eleifend. Proin auctor rhoncus ligula nec aliquet. Donec sodales molestie lacinia. Curabitur dictu">
+<meta property="og:description" content="Collection的概念1.Collection表示一组对象，它是集中，收集的意思，就是把一些数据收集起来。2.Collection函数库是在java.util包下的一些接口和类，类是用来产生对象存放数据用的，而接口是访问数据的方式。3.Collection函数库与数组的两点不同：    1)数组的容量是有限制的，而Collecyion库没有这样的限制，它容量可以自动的调节。    2)Coll">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://github.com/slvanass/slvanass.github.io/blob/master/81b78497jw1emfgts2pt4j21hc0u0k1c.jpg?raw=true">
-<meta property="og:updated_time" content="2018-01-19T02:08:06.393Z">
+<meta property="og:image" content="https://github.com/slvanass/slvanass.github.io/blob/master/timg.jpg?raw=true">
+<meta property="og:image" content="https://github.com/slvanass/slvanass.github.io/blob/master/timg.jpg?raw=true">
+<meta property="og:updated_time" content="2018-03-21T01:29:34.518Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Gallery">
-<meta name="twitter:description" content="Nunc dignissim volutpat enim, non sollicitudin purus dignissim id. Nam sit amet urna eu velit lacinia eleifend. Proin auctor rhoncus ligula nec aliquet. Donec sodales molestie lacinia. Curabitur dictu">
-<meta name="twitter:image" content="https://github.com/slvanass/slvanass.github.io/blob/master/81b78497jw1emfgts2pt4j21hc0u0k1c.jpg?raw=true">
+<meta name="twitter:title" content="容器">
+<meta name="twitter:description" content="Collection的概念1.Collection表示一组对象，它是集中，收集的意思，就是把一些数据收集起来。2.Collection函数库是在java.util包下的一些接口和类，类是用来产生对象存放数据用的，而接口是访问数据的方式。3.Collection函数库与数组的两点不同：    1)数组的容量是有限制的，而Collecyion库没有这样的限制，它容量可以自动的调节。    2)Coll">
+<meta name="twitter:image" content="https://github.com/slvanass/slvanass.github.io/blob/master/timg.jpg?raw=true">
 
     
     <link rel="alternative" href="/atom.xml" title="liuwc&#39;s blog" type="application/atom+xml">
@@ -70,20 +71,20 @@
 </div>
     </header>
     <div id="container">
-      <div id="main" class="photo" itemscope itemprop="blogPost">
+      <div id="main" class="post" itemscope itemprop="blogPost">
   
 	<article itemprop="articleBody"> 
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2018/01/19/your-titile/" title="Gallery" itemprop="url">Gallery</a>
+      <a href="/2018/02/12/container/" title="容器" itemprop="url">容器</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="liuwc" target="_blank" itemprop="author">liuwc</a>
 		
   <p class="article-time">
-    <time datetime="2018-01-19T01:58:10.000Z" itemprop="datePublished"> Published 2018-01-19</time>
+    <time datetime="2018-02-12T01:58:10.000Z" itemprop="datePublished"> Published 2018-02-12</time>
     
   </p>
 </header>
@@ -92,11 +93,43 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">Contents</strong>
 		
-			
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Collection的概念"><span class="toc-number">1.</span> <span class="toc-text">Collection的概念</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Collection的接口"><span class="toc-number">2.</span> <span class="toc-text">Collection的接口</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#ArrayList和LinkedList以及Vector用法详解"><span class="toc-number">3.</span> <span class="toc-text">ArrayList和LinkedList以及Vector用法详解</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#自己实现ArrayList（数组扩容add和get方法的实现）"><span class="toc-number">4.</span> <span class="toc-text">自己实现ArrayList（数组扩容add和get方法的实现）</span></a></li></ol>
 		
 		</div>
 		
-		<p>Nunc dignissim volutpat enim, non sollicitudin purus dignissim id. Nam sit amet urna eu velit lacinia eleifend. Proin auctor rhoncus ligula nec aliquet. Donec sodales molestie lacinia. Curabitur dictum faucibus urna at convallis. Aliquam in lectus at urna rutrum porta. In lacus arcu, molestie ut vestibulum ut, rhoncus sed eros. Sed et elit vitae risus pretium consectetur vel in mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempus turpis quis lectus rhoncus adipiscing. Proin pulvinar placerat suscipit. Maecenas imperdiet, quam vitae varius auctor, enim mauris vulputate sapien, nec laoreet neque diam non quam.<br><img src="https://github.com/slvanass/slvanass.github.io/blob/master/81b78497jw1emfgts2pt4j21hc0u0k1c.jpg?raw=true" alt="Wallbase - dgnfly (wallbase.cc/wallpaper/1384450)" title="Wallbase - dgnfly (wallbase.cc/wallpaper/1384450)"><br>Etiam luctus mauris at mi sollicitudin quis malesuada nibh porttitor. Vestibulum non dapibus magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin feugiat hendrerit viverra. Phasellus sit amet nunc mauris, eu ultricies tellus. Sed a mi tortor, eleifend varius erat. Proin consectetur molestie tortor eu gravida. Cras placerat orci id arcu tristique ut rutrum justo pulvinar. Maecenas lacinia fringilla diam non bibendum. Aenean vel viverra turpis. Integer ut leo nisi. Pellentesque vehicula quam ut sapien convallis consequat. Aliquam ut arcu purus, eget tempor purus. Integer eu tellus quis erat tristique gravida eu vel lorem.</p>
+		<h1 id="Collection的概念"><a href="#Collection的概念" class="headerlink" title="Collection的概念"></a>Collection的概念</h1><p>1.Collection表示一组对象，它是集中，收集的意思，就是把一些数据收集起来。<br>2.Collection函数库是在java.util包下的一些接口和类，类是用来产生对象存放数据用的，而接口是访问数据的方式。<br>3.Collection函数库与数组的两点不同：<br>    1)数组的容量是有限制的，而Collecyion库没有这样的限制，它容量可以自动的调节。<br>    2)Collection函数库只能用来存放对象，而数组没有这样的限制。<br>4.Collection接口是Collection层次结构中的根接口，它定义了一些最基本的访问方法，让我们能用统一的方式通过它或它的子接口来访问数据。<br>5.区别：Collection代表一组对象，Collection函数库就是java容器的框架，Collection接口，是这个集合框架中的根接口。<br>6.存放在Collection库中的数据，被称为元素(element)。</p>
+<h1 id="Collection的接口"><a href="#Collection的接口" class="headerlink" title="Collection的接口"></a>Collection的接口</h1><p><img src="https://github.com/slvanass/slvanass.github.io/blob/master/timg.jpg?raw=true" alt="再别康桥" title="再别康桥"><br><img src="https://github.com/slvanass/slvanass.github.io/blob/master/timg.jpg?raw=true" alt="再别康桥" title="再别康桥"><br>1.Collection 接口：定义了存取一组对象的方法，其子接口Set和List分别定义了存储方式。<br>    -Set中的数据对象没有顺序且不可以重复。<br>    -List中的数据对象有顺序且可以重复。<br>2.Map接口定义了存储“键（key）-值（value）映射对”的方法。</p>
+<h1 id="ArrayList和LinkedList以及Vector用法详解"><a href="#ArrayList和LinkedList以及Vector用法详解" class="headerlink" title="ArrayList和LinkedList以及Vector用法详解"></a>ArrayList和LinkedList以及Vector用法详解</h1><p>package List;</p>
+<p>import java.util.ArrayList;<br>import java.util.Date;<br>import java.util.List;</p>
+<p>/**</p>
+<ul>
+<li><p>Created by lwc on 2018/3/19.<br>*/<br>public class Test01 {</p>
+<p> public static void main(String[] args) {</p>
+<pre><code>List list = new ArrayList();
+//ArrayList:底层实现是数组，所以，查询快。修改、插入、删除慢。
+//LinkedList:底层实现是链表，所以，查询慢。修改、插入、删除慢。
+//Vector：线程安全的、效率低（多线程的时候使用）
+list.add(&quot;aaa&quot;);
+list.add(new Date());
+list.add(1234);//包装类的：自动装箱
+System.out.println(list.size());
+System.out.println(list.isEmpty());
+list.remove(new Date());//hashCode和equals
+list.remove(&quot;aaa&quot;);
+System.out.println(list.size());
+List list2 = new ArrayList();
+list2.add(&quot;bbb&quot;);
+list2.add(&quot;ccc&quot;);
+list.add(list2);
+System.out.println(list.size());
+//跟顺序的操作
+String str = (String) list.get(0);
+System.out.println(str);
+list.set(1,&quot;ababa&quot;);
+list.remove(0);
+</code></pre><p> }<br>}</p>
+<h1 id="自己实现ArrayList（数组扩容add和get方法的实现）"><a href="#自己实现ArrayList（数组扩容add和get方法的实现）" class="headerlink" title="自己实现ArrayList（数组扩容add和get方法的实现）"></a>自己实现ArrayList（数组扩容add和get方法的实现）</h1></li>
+</ul>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -109,7 +142,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://www.liuwc.com/2018/01/19/your-titile/" data-title="Gallery | liuwc&#39;s blog" data-tsina="" class="share clearfix">
+	  <div data-url="http://www.liuwc.com/2018/02/12/container/" data-title="容器 | liuwc&#39;s blog" data-tsina="" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -123,18 +156,18 @@
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/2018/02/12/hxjz/" title="Java核心机制">
+ <a href="/2018/02/12/linux/" title="linux学习笔记">
   <strong>上一篇：</strong><br/>
   <span>
-  Java核心机制</span>
+  linux学习笔记</span>
 </a>
 </div>
 
 
 <div class="next">
-<a href="/2018/01/18/article-title/"  title="java 面试基础">
+<a href="/2018/02/12/io/"  title="IO流详解">
  <strong>下一篇：</strong><br/> 
- <span>java 面试基础
+ <span>IO流详解
 </span>
 </a>
 </div>
@@ -151,7 +184,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">Contents</strong>
  
- 
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Collection的概念"><span class="toc-number">1.</span> <span class="toc-text">Collection的概念</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Collection的接口"><span class="toc-number">2.</span> <span class="toc-text">Collection的接口</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#ArrayList和LinkedList以及Vector用法详解"><span class="toc-number">3.</span> <span class="toc-text">ArrayList和LinkedList以及Vector用法详解</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#自己实现ArrayList（数组扩容add和get方法的实现）"><span class="toc-number">4.</span> <span class="toc-text">自己实现ArrayList（数组扩容add和get方法的实现）</span></a></li></ol>
  
   </div>
 
