@@ -1,0 +1,454 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>css标签记录详解 | liuwc&#39;s blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="liuwc">
+    
+
+    
+    <meta name="description" content="Aalign-items:center  项目在交叉轴上居中 align-content:center  定义了多跟轴线居中对齐 Bborder-radius: 33px 边框弧度 CDdisplay: flex  弹性布局 display: -webkit-flex  弹性布局内核浏览器为谷歌或safari EFflex-direction: column  弹性布局中项目为竖直排列 flex-">
+<meta property="og:type" content="article">
+<meta property="og:title" content="css标签记录详解">
+<meta property="og:url" content="http://www.liuwc.com/2018/02/12/webBq/index.html">
+<meta property="og:site_name" content="liuwc&#39;s blog">
+<meta property="og:description" content="Aalign-items:center  项目在交叉轴上居中 align-content:center  定义了多跟轴线居中对齐 Bborder-radius: 33px 边框弧度 CDdisplay: flex  弹性布局 display: -webkit-flex  弹性布局内核浏览器为谷歌或safari EFflex-direction: column  弹性布局中项目为竖直排列 flex-">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-06-13T09:54:50.753Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="css标签记录详解">
+<meta name="twitter:description" content="Aalign-items:center  项目在交叉轴上居中 align-content:center  定义了多跟轴线居中对齐 Bborder-radius: 33px 边框弧度 CDdisplay: flex  弹性布局 display: -webkit-flex  弹性布局内核浏览器为谷歌或safari EFflex-direction: column  弹性布局中项目为竖直排列 flex-">
+
+    
+    <link rel="alternative" href="/atom.xml" title="liuwc&#39;s blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="liuwc&#39;s blog">liuwc&#39;s blog</a></h1>
+				<h2 class="blog-motto"></h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="hidden" name="q" value="site:www.liuwc.com">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2018/02/12/webBq/" title="css标签记录详解" itemprop="url">css标签记录详解</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="liuwc" target="_blank" itemprop="author">liuwc</a>
+		
+  <p class="article-time">
+    <time datetime="2018-02-12T01:58:10.000Z" itemprop="datePublished"> Published 2018-02-12</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#A"><span class="toc-number">1.</span> <span class="toc-text">A</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#B"><span class="toc-number">2.</span> <span class="toc-text">B</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#C"><span class="toc-number">3.</span> <span class="toc-text">C</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#D"><span class="toc-number">4.</span> <span class="toc-text">D</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#E"><span class="toc-number">5.</span> <span class="toc-text">E</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#F"><span class="toc-number">6.</span> <span class="toc-text">F</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#G"><span class="toc-number">7.</span> <span class="toc-text">G</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#H"><span class="toc-number">8.</span> <span class="toc-text">H</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#I"><span class="toc-number">9.</span> <span class="toc-text">I</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#J"><span class="toc-number">10.</span> <span class="toc-text">J</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#K"><span class="toc-number">11.</span> <span class="toc-text">K</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#L"><span class="toc-number">12.</span> <span class="toc-text">L</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#M"><span class="toc-number">13.</span> <span class="toc-text">M</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#N"><span class="toc-number">14.</span> <span class="toc-text">N</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#O"><span class="toc-number">15.</span> <span class="toc-text">O</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#P"><span class="toc-number">16.</span> <span class="toc-text">P</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Q"><span class="toc-number">17.</span> <span class="toc-text">Q</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#R"><span class="toc-number">18.</span> <span class="toc-text">R</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#S"><span class="toc-number">19.</span> <span class="toc-text">S</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#T"><span class="toc-number">20.</span> <span class="toc-text">T</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#U"><span class="toc-number">21.</span> <span class="toc-text">U</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#V"><span class="toc-number">22.</span> <span class="toc-text">V</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#W"><span class="toc-number">23.</span> <span class="toc-text">W</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#X"><span class="toc-number">24.</span> <span class="toc-text">X</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Y"><span class="toc-number">25.</span> <span class="toc-text">Y</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Z"><span class="toc-number">26.</span> <span class="toc-text">Z</span></a></li></ol>
+		
+		</div>
+		
+		<h1 id="A"><a href="#A" class="headerlink" title="A"></a>A</h1><pre><code>align-items:center  项目在交叉轴上居中
+align-content:center  定义了多跟轴线居中对齐
+</code></pre><h1 id="B"><a href="#B" class="headerlink" title="B"></a>B</h1><pre><code>border-radius: 33px 边框弧度
+</code></pre><h1 id="C"><a href="#C" class="headerlink" title="C"></a>C</h1><h1 id="D"><a href="#D" class="headerlink" title="D"></a>D</h1><pre><code>display: flex  弹性布局
+display: -webkit-flex  弹性布局内核浏览器为谷歌或safari
+</code></pre><h1 id="E"><a href="#E" class="headerlink" title="E"></a>E</h1><h1 id="F"><a href="#F" class="headerlink" title="F"></a>F</h1><pre><code>flex-direction: column  弹性布局中项目为竖直排列
+flex-wrap: nowrap  轴线排列不下、不进行换行
+</code></pre><h1 id="G"><a href="#G" class="headerlink" title="G"></a>G</h1><pre><code>background: linear-gradient(0deg,#3385eb, #369cee);  背景颜色渐变 0为角度切换
+</code></pre><h1 id="H"><a href="#H" class="headerlink" title="H"></a>H</h1><h1 id="I"><a href="#I" class="headerlink" title="I"></a>I</h1><h1 id="J"><a href="#J" class="headerlink" title="J"></a>J</h1><h1 id="K"><a href="#K" class="headerlink" title="K"></a>K</h1><h1 id="L"><a href="#L" class="headerlink" title="L"></a>L</h1><h1 id="M"><a href="#M" class="headerlink" title="M"></a>M</h1><pre><code>margin:0 0 0 0 顺时针上 右 下 左 的间距 
+</code></pre><h1 id="N"><a href="#N" class="headerlink" title="N"></a>N</h1><h1 id="O"><a href="#O" class="headerlink" title="O"></a>O</h1><pre><code>overflow: hidden; 内容超出容器范围后隐藏
+</code></pre><h1 id="P"><a href="#P" class="headerlink" title="P"></a>P</h1><h1 id="Q"><a href="#Q" class="headerlink" title="Q"></a>Q</h1><h1 id="R"><a href="#R" class="headerlink" title="R"></a>R</h1><h1 id="S"><a href="#S" class="headerlink" title="S"></a>S</h1><h1 id="T"><a href="#T" class="headerlink" title="T"></a>T</h1><pre><code>必需。水平阴影的位置。允许负值。
+必需。垂直阴影的位置。允许负值。
+可选。模糊的距离。
+可选。阴影的颜色。参阅 CSS 颜色值。
+text-shadow: 3px 3px 2px #000000; 
+</code></pre><h1 id="U"><a href="#U" class="headerlink" title="U"></a>U</h1><h1 id="V"><a href="#V" class="headerlink" title="V"></a>V</h1><pre><code>vertical-align: middle  模块垂直居中
+</code></pre><h1 id="W"><a href="#W" class="headerlink" title="W"></a>W</h1><h1 id="X"><a href="#X" class="headerlink" title="X"></a>X</h1><h1 id="Y"><a href="#Y" class="headerlink" title="Y"></a>Y</h1><h1 id="Z"><a href="#Z" class="headerlink" title="Z"></a>Z</h1>  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://www.liuwc.com/2018/02/12/webBq/" data-title="css标签记录详解 | liuwc&#39;s blog" data-tsina="" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2018/02/12/hxjz/" title="Java核心机制">
+  <strong>上一篇：</strong><br/>
+  <span>
+  Java核心机制</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2018/01/19/your-titile/"  title="Gallery">
+ <strong>下一篇：</strong><br/> 
+ <span>Gallery
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#A"><span class="toc-number">1.</span> <span class="toc-text">A</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#B"><span class="toc-number">2.</span> <span class="toc-text">B</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#C"><span class="toc-number">3.</span> <span class="toc-text">C</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#D"><span class="toc-number">4.</span> <span class="toc-text">D</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#E"><span class="toc-number">5.</span> <span class="toc-text">E</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#F"><span class="toc-number">6.</span> <span class="toc-text">F</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#G"><span class="toc-number">7.</span> <span class="toc-text">G</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#H"><span class="toc-number">8.</span> <span class="toc-text">H</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#I"><span class="toc-number">9.</span> <span class="toc-text">I</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#J"><span class="toc-number">10.</span> <span class="toc-text">J</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#K"><span class="toc-number">11.</span> <span class="toc-text">K</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#L"><span class="toc-number">12.</span> <span class="toc-text">L</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#M"><span class="toc-number">13.</span> <span class="toc-text">M</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#N"><span class="toc-number">14.</span> <span class="toc-text">N</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#O"><span class="toc-number">15.</span> <span class="toc-text">O</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#P"><span class="toc-number">16.</span> <span class="toc-text">P</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Q"><span class="toc-number">17.</span> <span class="toc-text">Q</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#R"><span class="toc-number">18.</span> <span class="toc-text">R</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#S"><span class="toc-number">19.</span> <span class="toc-text">S</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#T"><span class="toc-number">20.</span> <span class="toc-text">T</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#U"><span class="toc-number">21.</span> <span class="toc-text">U</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#V"><span class="toc-number">22.</span> <span class="toc-text">V</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#W"><span class="toc-number">23.</span> <span class="toc-text">W</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#X"><span class="toc-number">24.</span> <span class="toc-text">X</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Y"><span class="toc-number">25.</span> <span class="toc-text">Y</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Z"><span class="toc-number">26.</span> <span class="toc-text">Z</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  
+<div class="github-card">
+<p class="asidetitle">Github Card</p>
+<div class="github-card" data-github="slvanass" data-theme="medium"></div>
+<script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
+</div>
+
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+</div>
+
+  
+
+  
+
+  <div class="linkslist">
+  <p class="asidetitle">Links</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://coderq.com" target="_blank" title="一个面向程序员交流分享的新一代社区">码农圈</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://wuchong.me" target="_blank" title="Jark&#39;s Blog">Jark&#39;s Blog</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m liuwc <br/>
+			Welcome to my blog</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/2176287895" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/slvanass" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2018 
+		
+		<a href="/about" target="_blank" title="liuwc">liuwc</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?e6d1f421bbc9962127a50488f9ed37d1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>
