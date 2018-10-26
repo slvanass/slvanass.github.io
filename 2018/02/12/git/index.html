@@ -42,7 +42,7 @@
 				<h1 class="site-name"><a href="/" title="liuwc&#39;s blog">liuwc&#39;s blog</a></h1>
 				<h2 class="blog-motto"></h2>
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
 			</a></div>
 			<nav class="animated">
 				<ul>
@@ -58,7 +58,7 @@
  					
 					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
 						<input type="hidden" name="q" value="site:www.liuwc.com">
 					</form>
 					
@@ -81,14 +81,14 @@
 		<a href="/about" title="liuwc" target="_blank" itemprop="author">liuwc</a>
 		
   <p class="article-time">
-    <time datetime="2018-02-12T01:58:10.000Z" itemprop="datePublished"> Published 2018-02-12</time>
+    <time datetime="2018-02-12T01:58:10.000Z" itemprop="datePublished"> 发表于 2018-02-12</time>
     
   </p>
 </header>
 	<div class="article-content">
 		
 		<div id="toc" class="toc-article">
-			<strong class="toc-title">Contents</strong>
+			<strong class="toc-title">文章目录</strong>
 		
 			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#配置git"><span class="toc-number">1.</span> <span class="toc-text">配置git</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#创建README-md文件"><span class="toc-number">2.</span> <span class="toc-text">创建README.md文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#创建-gitignore文件"><span class="toc-number">3.</span> <span class="toc-text">创建 .gitignore文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#git初始化"><span class="toc-number">4.</span> <span class="toc-text">git初始化</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#查看变化的文件"><span class="toc-number">5.</span> <span class="toc-text">查看变化的文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#添加变更文件"><span class="toc-number">6.</span> <span class="toc-text">添加变更文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#提交本地仓库"><span class="toc-number">7.</span> <span class="toc-text">提交本地仓库</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#连接远程仓库"><span class="toc-number">8.</span> <span class="toc-text">连接远程仓库</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#查看分支"><span class="toc-number">9.</span> <span class="toc-text">查看分支</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#查看远程分支"><span class="toc-number">10.</span> <span class="toc-text">查看远程分支</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#拉取项目"><span class="toc-number">11.</span> <span class="toc-text">拉取项目</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#推送项目上远程仓库"><span class="toc-number">12.</span> <span class="toc-text">推送项目上远程仓库</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#检出分支"><span class="toc-number">13.</span> <span class="toc-text">检出分支</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#将分支推送至远程仓库"><span class="toc-number">14.</span> <span class="toc-text">将分支推送至远程仓库</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#断开与远程仓库的连接"><span class="toc-number">15.</span> <span class="toc-text">断开与远程仓库的连接</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#拷贝项目到当前路径"><span class="toc-number">16.</span> <span class="toc-text">拷贝项目到当前路径</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#删除远程分支"><span class="toc-number">17.</span> <span class="toc-text">删除远程分支</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#合并分支去主分支"><span class="toc-number">18.</span> <span class="toc-text">合并分支去主分支</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#当前目录npm初始化"><span class="toc-number">19.</span> <span class="toc-text">当前目录npm初始化</span></a></li></ol>
 		
@@ -137,11 +137,19 @@
 	
 <nav class="article-nav clearfix">
  
+ <div class="prev" >
+ <a href="/2018/02/12/container/" title="容器">
+  <strong>上一篇：</strong><br/>
+  <span>
+  容器</span>
+</a>
+</div>
+
 
 <div class="next">
-<a href="/2018/02/12/thread/"  title="java多线程">
+<a href="/2018/02/12/webBq/"  title="css标签记录详解">
  <strong>下一篇：</strong><br/> 
- <span>java多线程
+ <span>css标签记录详解
 </span>
 </a>
 </div>
@@ -153,22 +161,22 @@
 
 
 </div>  
-      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
 
   <div id="toc" class="toc-aside">
-  <strong class="toc-title">Contents</strong>
+  <strong class="toc-title">文章目录</strong>
  
  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#配置git"><span class="toc-number">1.</span> <span class="toc-text">配置git</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#创建README-md文件"><span class="toc-number">2.</span> <span class="toc-text">创建README.md文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#创建-gitignore文件"><span class="toc-number">3.</span> <span class="toc-text">创建 .gitignore文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#git初始化"><span class="toc-number">4.</span> <span class="toc-text">git初始化</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#查看变化的文件"><span class="toc-number">5.</span> <span class="toc-text">查看变化的文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#添加变更文件"><span class="toc-number">6.</span> <span class="toc-text">添加变更文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#提交本地仓库"><span class="toc-number">7.</span> <span class="toc-text">提交本地仓库</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#连接远程仓库"><span class="toc-number">8.</span> <span class="toc-text">连接远程仓库</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#查看分支"><span class="toc-number">9.</span> <span class="toc-text">查看分支</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#查看远程分支"><span class="toc-number">10.</span> <span class="toc-text">查看远程分支</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#拉取项目"><span class="toc-number">11.</span> <span class="toc-text">拉取项目</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#推送项目上远程仓库"><span class="toc-number">12.</span> <span class="toc-text">推送项目上远程仓库</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#检出分支"><span class="toc-number">13.</span> <span class="toc-text">检出分支</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#将分支推送至远程仓库"><span class="toc-number">14.</span> <span class="toc-text">将分支推送至远程仓库</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#断开与远程仓库的连接"><span class="toc-number">15.</span> <span class="toc-text">断开与远程仓库的连接</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#拷贝项目到当前路径"><span class="toc-number">16.</span> <span class="toc-text">拷贝项目到当前路径</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#删除远程分支"><span class="toc-number">17.</span> <span class="toc-text">删除远程分支</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#合并分支去主分支"><span class="toc-number">18.</span> <span class="toc-text">合并分支去主分支</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#当前目录npm初始化"><span class="toc-number">19.</span> <span class="toc-text">当前目录npm初始化</span></a></li></ol>
  
   </div>
 
 <div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
 <aside class="clearfix">
 
   
 <div class="github-card">
-<p class="asidetitle">Github Card</p>
+<p class="asidetitle">Github 名片</p>
 <div class="github-card" data-github="slvanass" data-theme="medium"></div>
 <script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
 </div>
@@ -176,7 +184,7 @@
 
 
   <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
 </div>
 
   
@@ -184,7 +192,7 @@
   
 
   <div class="linkslist">
-  <p class="asidetitle">Links</p>
+  <p class="asidetitle">友情链接</p>
     <ul>
         
           <li>
@@ -428,7 +436,7 @@ var _hmt = _hmt || [];
 <!-- Totop Begin -->
 
 	<div id="totop">
-	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
 	</div>
 	<script src="/js/totop.js"></script>
 

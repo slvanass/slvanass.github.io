@@ -44,7 +44,7 @@
 				<h1 class="site-name"><a href="/" title="liuwc&#39;s blog">liuwc&#39;s blog</a></h1>
 				<h2 class="blog-motto"></h2>
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
 			</a></div>
 			<nav class="animated">
 				<ul>
@@ -60,7 +60,7 @@
  					
 					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
 						<input type="hidden" name="q" value="site:www.liuwc.com">
 					</form>
 					
@@ -83,14 +83,14 @@
 		<a href="/about" title="liuwc" target="_blank" itemprop="author">liuwc</a>
 		
   <p class="article-time">
-    <time datetime="2018-02-12T01:58:10.000Z" itemprop="datePublished"> Published 2018-02-12</time>
+    <time datetime="2018-02-12T01:58:10.000Z" itemprop="datePublished"> 发表于 2018-02-12</time>
     
   </p>
 </header>
 	<div class="article-content">
 		
 		<div id="toc" class="toc-article">
-			<strong class="toc-title">Contents</strong>
+			<strong class="toc-title">文章目录</strong>
 		
 			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#File对象-路径常量、绝对与相对路径、构建对象"><span class="toc-number">1.</span> <span class="toc-text">File对象(路径常量、绝对与相对路径、构建对象)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#File对象（常用方法、文件名的判断和长度和创建以及删除"><span class="toc-number">2.</span> <span class="toc-text">File对象（常用方法、文件名的判断和长度和创建以及删除</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#File对象（常用方法、文件夹操作、命令模式查找）"><span class="toc-number">3.</span> <span class="toc-text">File对象（常用方法、文件夹操作、命令模式查找）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#io分类和标准步骤"><span class="toc-number">4.</span> <span class="toc-text">io分类和标准步骤</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#字节流节点流（文件读取、写出、追加文件）"><span class="toc-number">5.</span> <span class="toc-text">字节流节点流（文件读取、写出、追加文件）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#字节流节点流（文件拷贝）"><span class="toc-number">6.</span> <span class="toc-text">字节流节点流（文件拷贝）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#字节流节点流-文件夹拷贝、工具制作、文件后缀与软件的关系"><span class="toc-number">7.</span> <span class="toc-text">字节流节点流(文件夹拷贝、工具制作、文件后缀与软件的关系)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#字符流-Reader、FileReader、Writer、FileWriter、读取、写出、拷贝"><span class="toc-number">8.</span> <span class="toc-text">字符流(Reader、FileReader、Writer、FileWriter、读取、写出、拷贝)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#缓冲流（BufferedInputStream、BufferedOutputStream、BufferedReader、BuffereWriter）"><span class="toc-number">9.</span> <span class="toc-text">缓冲流（BufferedInputStream、BufferedOutputStream、BufferedReader、BuffereWriter）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#转换流（字节转为字符、乱码分析、编码与解码字符集）"><span class="toc-number">10.</span> <span class="toc-text">转换流（字节转为字符、乱码分析、编码与解码字符集）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#转换流（字节转为字符、InputStreamReader、OutputStreamWriter、文件编码与解码）"><span class="toc-number">11.</span> <span class="toc-text">转换流（字节转为字符、InputStreamReader、OutputStreamWriter、文件编码与解码）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#其他流（字节数组流）"><span class="toc-number">12.</span> <span class="toc-text">其他流（字节数组流）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#其他流（字节数组流、与文件流对接）"><span class="toc-number">13.</span> <span class="toc-text">其他流（字节数组流、与文件流对接）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#其他流（基本数据类型处理流）"><span class="toc-number">14.</span> <span class="toc-text">其他流（基本数据类型处理流）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#其他流（对象处理流、序列化和反序列化）"><span class="toc-number">15.</span> <span class="toc-text">其他流（对象处理流、序列化和反序列化）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Java7新特性之关闭流（try-with-resource）"><span class="toc-number">16.</span> <span class="toc-text">Java7新特性之关闭流（try with resource）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#打印流"><span class="toc-number">17.</span> <span class="toc-text">打印流</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#装饰设计模式"><span class="toc-number">18.</span> <span class="toc-text">装饰设计模式</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#文件夹Bug修复（超长文件夹删除）"><span class="toc-number">19.</span> <span class="toc-text">文件夹Bug修复（超长文件夹删除）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#文件分割与合并（RandomAccessFile）"><span class="toc-number">20.</span> <span class="toc-text">文件分割与合并（RandomAccessFile）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#IO总结"><span class="toc-number">21.</span> <span class="toc-text">IO总结</span></a></li></ol>
 		
@@ -156,18 +156,18 @@
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/2018/02/12/container/" title="容器">
+ <a href="/2018/02/12/hxjz/" title="Java核心机制">
   <strong>上一篇：</strong><br/>
   <span>
-  容器</span>
+  Java核心机制</span>
 </a>
 </div>
 
 
 <div class="next">
-<a href="/2018/02/12/hxjz/"  title="Java核心机制">
+<a href="/2018/02/12/thread/"  title="java多线程">
  <strong>下一篇：</strong><br/> 
- <span>Java核心机制
+ <span>java多线程
 </span>
 </a>
 </div>
@@ -179,22 +179,22 @@
 
 
 </div>  
-      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
 
   <div id="toc" class="toc-aside">
-  <strong class="toc-title">Contents</strong>
+  <strong class="toc-title">文章目录</strong>
  
  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#File对象-路径常量、绝对与相对路径、构建对象"><span class="toc-number">1.</span> <span class="toc-text">File对象(路径常量、绝对与相对路径、构建对象)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#File对象（常用方法、文件名的判断和长度和创建以及删除"><span class="toc-number">2.</span> <span class="toc-text">File对象（常用方法、文件名的判断和长度和创建以及删除</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#File对象（常用方法、文件夹操作、命令模式查找）"><span class="toc-number">3.</span> <span class="toc-text">File对象（常用方法、文件夹操作、命令模式查找）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#io分类和标准步骤"><span class="toc-number">4.</span> <span class="toc-text">io分类和标准步骤</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#字节流节点流（文件读取、写出、追加文件）"><span class="toc-number">5.</span> <span class="toc-text">字节流节点流（文件读取、写出、追加文件）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#字节流节点流（文件拷贝）"><span class="toc-number">6.</span> <span class="toc-text">字节流节点流（文件拷贝）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#字节流节点流-文件夹拷贝、工具制作、文件后缀与软件的关系"><span class="toc-number">7.</span> <span class="toc-text">字节流节点流(文件夹拷贝、工具制作、文件后缀与软件的关系)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#字符流-Reader、FileReader、Writer、FileWriter、读取、写出、拷贝"><span class="toc-number">8.</span> <span class="toc-text">字符流(Reader、FileReader、Writer、FileWriter、读取、写出、拷贝)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#缓冲流（BufferedInputStream、BufferedOutputStream、BufferedReader、BuffereWriter）"><span class="toc-number">9.</span> <span class="toc-text">缓冲流（BufferedInputStream、BufferedOutputStream、BufferedReader、BuffereWriter）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#转换流（字节转为字符、乱码分析、编码与解码字符集）"><span class="toc-number">10.</span> <span class="toc-text">转换流（字节转为字符、乱码分析、编码与解码字符集）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#转换流（字节转为字符、InputStreamReader、OutputStreamWriter、文件编码与解码）"><span class="toc-number">11.</span> <span class="toc-text">转换流（字节转为字符、InputStreamReader、OutputStreamWriter、文件编码与解码）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#其他流（字节数组流）"><span class="toc-number">12.</span> <span class="toc-text">其他流（字节数组流）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#其他流（字节数组流、与文件流对接）"><span class="toc-number">13.</span> <span class="toc-text">其他流（字节数组流、与文件流对接）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#其他流（基本数据类型处理流）"><span class="toc-number">14.</span> <span class="toc-text">其他流（基本数据类型处理流）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#其他流（对象处理流、序列化和反序列化）"><span class="toc-number">15.</span> <span class="toc-text">其他流（对象处理流、序列化和反序列化）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Java7新特性之关闭流（try-with-resource）"><span class="toc-number">16.</span> <span class="toc-text">Java7新特性之关闭流（try with resource）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#打印流"><span class="toc-number">17.</span> <span class="toc-text">打印流</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#装饰设计模式"><span class="toc-number">18.</span> <span class="toc-text">装饰设计模式</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#文件夹Bug修复（超长文件夹删除）"><span class="toc-number">19.</span> <span class="toc-text">文件夹Bug修复（超长文件夹删除）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#文件分割与合并（RandomAccessFile）"><span class="toc-number">20.</span> <span class="toc-text">文件分割与合并（RandomAccessFile）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#IO总结"><span class="toc-number">21.</span> <span class="toc-text">IO总结</span></a></li></ol>
  
   </div>
 
 <div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
 <aside class="clearfix">
 
   
 <div class="github-card">
-<p class="asidetitle">Github Card</p>
+<p class="asidetitle">Github 名片</p>
 <div class="github-card" data-github="slvanass" data-theme="medium"></div>
 <script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
 </div>
@@ -202,7 +202,7 @@
 
 
   <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
 </div>
 
   
@@ -210,7 +210,7 @@
   
 
   <div class="linkslist">
-  <p class="asidetitle">Links</p>
+  <p class="asidetitle">友情链接</p>
     <ul>
         
           <li>
@@ -454,7 +454,7 @@ var _hmt = _hmt || [];
 <!-- Totop Begin -->
 
 	<div id="totop">
-	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
 	</div>
 	<script src="/js/totop.js"></script>
 
