@@ -1,0 +1,452 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>jquery学习笔记——样式 | liuwc&#39;s blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="liuwc">
+    
+
+    
+    <meta name="description" content="找到第一个dom对象并修改css123var div = document.getElementsByTagName(&amp;apos;div&amp;apos;); //dom对象var $first = $div.first(); //找到第一个div元素$first.css(&amp;apos;color&amp;apos;, &amp;apos;red&amp;apos;); //给第一个元素设置颜色 jquery基本筛选器12345">
+<meta property="og:type" content="article">
+<meta property="og:title" content="jquery学习笔记——样式">
+<meta property="og:url" content="http://www.liuwc.com/2018/11/16/jquery/index.html">
+<meta property="og:site_name" content="liuwc&#39;s blog">
+<meta property="og:description" content="找到第一个dom对象并修改css123var div = document.getElementsByTagName(&amp;apos;div&amp;apos;); //dom对象var $first = $div.first(); //找到第一个div元素$first.css(&amp;apos;color&amp;apos;, &amp;apos;red&amp;apos;); //给第一个元素设置颜色 jquery基本筛选器12345">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-11-16T01:23:06.465Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="jquery学习笔记——样式">
+<meta name="twitter:description" content="找到第一个dom对象并修改css123var div = document.getElementsByTagName(&amp;apos;div&amp;apos;); //dom对象var $first = $div.first(); //找到第一个div元素$first.css(&amp;apos;color&amp;apos;, &amp;apos;red&amp;apos;); //给第一个元素设置颜色 jquery基本筛选器12345">
+
+    
+    <link rel="alternative" href="/atom.xml" title="liuwc&#39;s blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="liuwc&#39;s blog">liuwc&#39;s blog</a></h1>
+				<h2 class="blog-motto"></h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:www.liuwc.com">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2018/11/16/jquery/" title="jquery学习笔记——样式" itemprop="url">jquery学习笔记——样式</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="liuwc" target="_blank" itemprop="author">liuwc</a>
+		
+  <p class="article-time">
+    <time datetime="2018-11-16T01:00:00.000Z" itemprop="datePublished"> 发表于 2018-11-16</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#找到第一个dom对象并修改css"><span class="toc-number">1.</span> <span class="toc-text">找到第一个dom对象并修改css</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#jquery基本筛选器"><span class="toc-number">2.</span> <span class="toc-text">jquery基本筛选器</span></a></li></ol>
+		
+		</div>
+		
+		<h1 id="找到第一个dom对象并修改css"><a href="#找到第一个dom对象并修改css" class="headerlink" title="找到第一个dom对象并修改css"></a>找到第一个dom对象并修改css</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var div = document.getElementsByTagName(&apos;div&apos;); //dom对象</span><br><span class="line">var $first = $div.first(); //找到第一个div元素</span><br><span class="line">$first.css(&apos;color&apos;, &apos;red&apos;); //给第一个元素设置颜色</span><br></pre></td></tr></table></figure>
+<h1 id="jquery基本筛选器"><a href="#jquery基本筛选器" class="headerlink" title="jquery基本筛选器"></a>jquery基本筛选器</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">$(&quot;:first&quot;)  匹配第一个元素</span><br><span class="line">$(&quot;:last&quot;)  匹配最后一个元素</span><br><span class="line">$(&quot;:not(selector)&quot;)  一个用来过滤的选择器，选择所有元素去除不匹配给定的选择器元素</span><br><span class="line">$(&quot;:eq(index)&quot;)  在匹配的集合中选择索引值为index的元素</span><br><span class="line">$(&quot;:gt(index)&quot;)  选择匹配集合中所有大于给定index(索引值)的元素</span><br><span class="line">$(&quot;:even&quot;)  选择索引值为偶数的元素，从0开始计数</span><br><span class="line">$(&quot;:odd&quot;)  选择索引值为奇数的元素，从0开始计数</span><br><span class="line">$(&quot;:lt(index)&quot;)  选择匹配集合中所有索引值小于给定index参数的元素</span><br><span class="line">$(&quot;:header&quot;)  选择所有标题元素，像h1、h2、h3等</span><br><span class="line">$(&quot;:lang(language)&quot;)  选择指定语言的所有元素</span><br><span class="line">$(&quot;:root&quot;)  选择该文档的根元素</span><br><span class="line">$(&quot;:animated&quot;)  选择所有正在执行动画效果的元素</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//找到第一个div</span></span><br><span class="line">$(<span class="string">".div:first"</span>).css(<span class="string">"color"</span>, <span class="string">"#CD00CD"</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//找到最后一个div</span></span><br><span class="line">$(<span class="string">".div:last"</span>).css(<span class="string">"color"</span>, <span class="string">"#CD00CD"</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//:even 选择所引值为偶数的元素，从 0 开始计数</span></span><br><span class="line">$(<span class="string">".div:even"</span>).css(<span class="string">"border"</span>, <span class="string">"3px groove red"</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//:odd 选择所引值为奇数的元素，从 0 开始计数</span></span><br><span class="line">$(<span class="string">".div:odd"</span>).css(<span class="string">"border"</span>, <span class="string">"3px groove blue"</span>);</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//选择单个</span></span><br><span class="line">$(<span class="string">".aaron:eq(2)"</span>).css(<span class="string">"border"</span>, <span class="string">"3px groove blue"</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//:gt 选择匹配集合中所有索引值大于给定index参数的元素</span></span><br><span class="line">$(<span class="string">".aaron:gt(3)"</span>).css(<span class="string">"border"</span>, <span class="string">"3px groove blue"</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//:lt 选择匹配集合中所有索引值小于给定index参数的元素</span></span><br><span class="line">$(<span class="string">".aaron:lt(2)"</span>).css(<span class="string">"color"</span>, <span class="string">"#CD00CD"</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//:not 选择所有元素去除不匹配给定的选择器的元素</span></span><br><span class="line"><span class="comment">//选中所有紧接着没有checked属性的input元素后的p元素，赋予颜色</span></span><br><span class="line">$(<span class="string">"input:not(:checked) + p"</span>).css(<span class="string">"background-color"</span>, <span class="string">"red"</span>);</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">$(&quot;:contains(text)&quot;)  选择所有包含指定文本的元素</span><br><span class="line">$(&quot;:parent&quot;)  选择所有含有子元素或者文本的元素</span><br><span class="line">$(&quot;:empty&quot;)  选择所有没有子元素的元素(包含文本节点)</span><br><span class="line">$(&quot;:has(selector)&quot;)  选择元素中至少包含指定选择器的元素</span><br><span class="line">``</span><br><span class="line"></span><br><span class="line">```java</span><br><span class="line">//查找所有class=&apos;div&apos;中DOM元素中包含&quot;contains&quot;的元素节点</span><br><span class="line">//并且设置颜色</span><br><span class="line">$(&quot;.div:contains(&apos;:contains&apos;)&quot;).css(&quot;color&quot;, &quot;#CD00CD&quot;);</span><br><span class="line"></span><br><span class="line">//查找所有class=&apos;div&apos;中DOM元素中包含&quot;span&quot;的元素节点</span><br><span class="line">//并且设置颜色</span><br><span class="line">$(&quot;.div:has(&apos;:span&apos;)&quot;).css(&quot;color&quot;, &quot;blue&quot;);</span><br><span class="line"></span><br><span class="line">//选择所有包含子元素或者文本的a元素</span><br><span class="line">//增加一个蓝色的边框</span><br><span class="line">$(&quot;a:parent&quot;).css(&quot;border&quot;, &quot;3px groove blue&quot;);</span><br><span class="line"></span><br><span class="line">//找到a元素下面的所有空节点(没有子元素)</span><br><span class="line">//增加一段文本与边框</span><br><span class="line">$(&quot;a:empty&quot;).text(&quot;:empty&quot;).css(&quot;border&quot;, &quot;3px groove red&quot;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">$(&quot;:visible&quot;)  选择所有显示的元素</span><br><span class="line">$(&quot;:hidden&quot;)  选择所有隐藏的元素</span><br><span class="line"></span><br><span class="line">我们有几种方式可以隐藏一个元素：</span><br><span class="line"></span><br><span class="line">1.CSS display的值是none。</span><br><span class="line">2.type=&quot;hidden&quot;的表单元素。</span><br><span class="line">3.宽度和高度都显式设置为0。</span><br><span class="line">4.一个祖先元素是隐藏的，该元素是不会在页面上显示</span><br><span class="line">5.CSS visibility的值是hidden</span><br><span class="line">6.CSS opacity的指是0</span><br><span class="line">7.如果元素中占据文档中一定的空间,元素被认为是可见的。</span><br><span class="line">8.可见元素的宽度或高度，是大于零。</span><br><span class="line">9.元素的visibility: hidden 或 opacity: 0被认为是可见的，因为他们仍然占用空间布局。</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">$(&quot;[attribute|=&apos;value&apos;]&quot;)  选择指定属性值等于给定字符串或以该文字串为前缀(该字符串后跟一个连字符&quot;-&quot;)的元素</span><br><span class="line"></span><br><span class="line">$(&quot;[attribute*=&apos;value&apos;]&quot;)  选择指定属性具有包含一个给定的子字符串的元素(选择给定的属性是以包含某些值的元素)</span><br><span class="line"></span><br><span class="line">$(&quot;[attribute~=&apos;value&apos;]&quot;)  选择指定属性用空格分隔的值中包含一个给定值的元素</span><br><span class="line"></span><br><span class="line">$(&quot;[attribute=&apos;value&apos;]&quot;)  选择指定属性是给定值的元素</span><br><span class="line"></span><br><span class="line">$(&quot;[attribute!=&apos;value&apos;]&quot;)  选择不存在指定属性，或者指定的属性值不等于给定值的元素</span><br><span class="line"></span><br><span class="line">$(&quot;[attribute^=&apos;value&apos;]&quot;)  选择指定属性是以给定字符串开始的元素</span><br><span class="line"></span><br><span class="line">$(&quot;[attribute$=&apos;value&apos;]&quot;)  选择指定属性是以给定值结尾的元素，这个比较是区分大小写的</span><br><span class="line"></span><br><span class="line">$(&quot;[attribute]&quot;)  选择所有具有指定属性的元素，该属性可以是任何值</span><br><span class="line"></span><br><span class="line">$(&quot;[attributeFilter1][attributeFilterN]&quot;) 选择匹配所有指定的属性筛选器的元素</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//查找所有div中，属性name=p1的div元素</span></span><br><span class="line">$(<span class="string">'div[name=p1]'</span>).css(<span class="string">"border"</span>, <span class="string">"3px groove red"</span>); </span><br><span class="line"></span><br><span class="line"><span class="comment">//查找所有div中，有属性p2的div元素</span></span><br><span class="line">$(<span class="string">'div[name=p2]'</span>).css(<span class="string">"border"</span>, <span class="string">"3px groove blue"</span>); </span><br><span class="line"></span><br><span class="line"><span class="comment">//查找所有div中，有属性name中的值只包含一个连字符“-”的div元素</span></span><br><span class="line">$(<span class="string">'div[name|="-"]'</span>).css(<span class="string">"border"</span>, <span class="string">"3px groove #00FF00"</span>); </span><br><span class="line"></span><br><span class="line"><span class="comment">//查找所有div中，有属性name中的值包含一个连字符“空”和“a”的div元素</span></span><br><span class="line">$(<span class="string">'div[name~="a"]'</span>).css(<span class="string">"border"</span>, <span class="string">"3px groove #668B8B"</span>); </span><br><span class="line"></span><br><span class="line"><span class="comment">//查找所有div中，属性name的值是用imooc开头的</span></span><br><span class="line">$&#123;<span class="string">'div[name^=imooc]'</span>&#125;.css(<span class="string">"border"</span>, <span class="string">"3px groove red"</span>); </span><br><span class="line"></span><br><span class="line"><span class="comment">//查找所有div中，属性name的值是用imooc结尾的</span></span><br><span class="line">$(<span class="string">'div[name$=imooc]'</span>).css(<span class="string">"border"</span>, <span class="string">"3px groove blue"</span>); </span><br><span class="line"></span><br><span class="line"><span class="comment">//查找所有div中，有属性name中的值包含一个test字符串的div元素</span></span><br><span class="line">$(<span class="string">'div[name*="test"]'</span>).css(<span class="string">"border"</span>, <span class="string">"3px groove #00FF00"</span>); </span><br><span class="line"></span><br><span class="line"><span class="comment">//查找所有div中，有属性testattr中的值没有包含"true"的div</span></span><br><span class="line">$(<span class="string">'div[testattr!="true"]'</span>).css(<span class="string">"border"</span>, <span class="string">"3px groove #668B8B"</span>);</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$(&quot;:first:child&quot;) 选择所有附件元素下的第一个子元素</span><br><span class="line"></span><br><span class="line">$(&quot;:last:child&quot;) 选择所有父级元素下的最后一个子元素</span><br><span class="line"></span><br><span class="line">$(&quot;:only—child&quot;) 如果某个元素是其父元素的唯一子元素，那么它就会被选中</span><br><span class="line"></span><br><span class="line">$(&quot;:nth-child&quot;) 选择的他们所有父元素的第n个子元素</span><br><span class="line"></span><br><span class="line">$(&quot;:nth-last-child&quot;) 选择所有他们父元素的第n个子元素。计数从最后一个元素开始到第一个</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$(&quot;:input&quot;) 选择所有input,textarea,select和button元素</span><br><span class="line">$(&quot;:text&quot;) 匹配所有文本框</span><br><span class="line">$(&quot;:password&quot;) 匹配所有密码框</span><br><span class="line">$(&quot;:radio&quot;) 匹配所有单选按钮</span><br><span class="line">$(&quot;:checkbox&quot;) 匹配所有复选框</span><br><span class="line">$(&quot;:submit&quot;) 匹配所有提交按钮</span><br><span class="line">$(&quot;:image&quot;) 匹配所有图像域</span><br><span class="line">$(&quot;:reset&quot;) 匹配所有重置按钮</span><br><span class="line">$(&quot;:button&quot;) 匹配所有按钮</span><br><span class="line">$(&quot;:file&quot;) 匹配所有文件域</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//查找所有 input, textarea, select 和 button 元素</span></span><br><span class="line"><span class="comment">//:input 选择器基本上选择所有表单控件</span></span><br><span class="line">$(<span class="string">':input'</span>).css(<span class="string">"border"</span>, <span class="string">"1px groove red"</span>); </span><br><span class="line"></span><br><span class="line"><span class="comment">//匹配所有input元素中类型为text的input元素</span></span><br><span class="line">$(<span class="string">'input:text'</span>).css(<span class="string">"background"</span>, <span class="string">"#A2CD5A"</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//匹配所有input元素中类型为password的input元素</span></span><br><span class="line">$(<span class="string">'input:password'</span>).css(<span class="string">"background"</span>, <span class="string">"yellow"</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//匹配所有input元素中的单选按钮,并选中</span></span><br><span class="line">$(<span class="string">'input:radio'</span>).attr(<span class="string">'checked'</span>,<span class="string">'true'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//匹配所有input元素中的复选按钮,并选中</span></span><br><span class="line">$(<span class="string">'input:checkbox'</span>).attr(<span class="string">'checked'</span>,<span class="string">'true'</span>); </span><br><span class="line"></span><br><span class="line"><span class="comment">//匹配所有input元素中的提交的按钮,修改背景颜色</span></span><br><span class="line">$(<span class="string">'input:submit'</span>).css(<span class="string">"background"</span>, <span class="string">"#C6E2FF"</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//匹配所有input元素中的图像类型的元素,修改背景颜色</span></span><br><span class="line">$(<span class="string">'input:image'</span>).css(<span class="string">"background"</span>, <span class="string">"#F4A460"</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//匹配所有input元素中类型为按钮的元素</span></span><br><span class="line">$(<span class="string">'input:button'</span>).css(<span class="string">"background"</span>, <span class="string">"red"</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//匹配所有input元素中类型为file的元素</span></span><br><span class="line">$(<span class="string">'input:file'</span>).css(<span class="string">"background"</span>, <span class="string">"#CD1076"</span>);</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$(&quot;:enabled&quot;) 选取可用的表单元素</span><br><span class="line">$(&quot;:disabled&quot;) 选取不可用的表单元素</span><br><span class="line">$(&quot;:checked&quot;) 选取被选中的&lt;input&gt; 元素</span><br><span class="line">$(&quot;:selected&quot;) 选取被转中的&lt;option&gt;元素</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//查找所有input所有可用的（未被禁用的元素）input元素。</span></span><br><span class="line">$(<span class="string">'input:enabled'</span>).css(<span class="string">"border"</span>, <span class="string">"2px groove red"</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//查找所有input所有不可用的（被禁用的元素）input元素。</span></span><br><span class="line">$(<span class="string">'input:disabled'</span>).css(<span class="string">"border"</span>, <span class="string">"2px groove blue"</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//查找所有input所有勾选的元素(单选框,复选框)</span></span><br><span class="line"><span class="comment">//移除input的checked属性</span></span><br><span class="line">$(<span class="string">'input:checked'</span>).removeAttr(<span class="string">'checked'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">//查找所有option元素中,有selected属性被选中的选项</span></span><br><span class="line"><span class="comment">//移除option的selected属性</span></span><br><span class="line">$(<span class="string">'option:selected'</span>).removeAttr(<span class="string">'selected'</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">attr()有4个表达式</span><br><span class="line"></span><br><span class="line">1.attr(传入属性名)：获取属性的值</span><br><span class="line">2.attr(属性名, 属性值)：设置属性的值</span><br><span class="line">3.attr(属性名,函数值)：设置属性的函数值</span><br><span class="line">4.attr(attributes)：给指定元素设置多个属性值，即：&#123;属性名一: “属性值一” , 属性名二: “属性值二” , … … &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//找到第一个input，通过attr设置属性value的值</span></span><br><span class="line">$(<span class="string">"input:first"</span>).attr(<span class="string">'value'</span>,<span class="string">'.attr( attributeName, value )'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">//找到第二个input，通过attr获取属性value的值</span></span><br><span class="line">$(<span class="string">"input:eq(1)"</span>).attr(<span class="string">'value'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">//找到第三个input，通过使用一个函数来设置属性</span></span><br><span class="line"><span class="comment">//可以根据该元素上的其它属性值返回最终所需的属性值</span></span><br><span class="line"><span class="comment">//例如，我们可以把新的值与现有的值联系在一起：</span></span><br><span class="line">$(<span class="string">"input:eq(2)"</span>).attr(<span class="string">'value'</span>,function(i, val)&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">'通过function设置'</span> + val</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">//找到第四个input，通过使用removeAttr删除属性</span></span><br><span class="line">$(<span class="string">"input:eq(3)"</span>).removeAttr(<span class="string">'value'</span>)</span><br></pre></td></tr></table></figure>  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://www.liuwc.com/2018/11/16/jquery/" data-title="jquery学习笔记——样式 | liuwc&#39;s blog" data-tsina="" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2018/12/12/html/" title="HTML标记大全参考手册">
+  <strong>上一篇：</strong><br/>
+  <span>
+  HTML标记大全参考手册</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2018/02/12/linux/"  title="linux学习笔记">
+ <strong>下一篇：</strong><br/> 
+ <span>linux学习笔记
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#找到第一个dom对象并修改css"><span class="toc-number">1.</span> <span class="toc-text">找到第一个dom对象并修改css</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#jquery基本筛选器"><span class="toc-number">2.</span> <span class="toc-text">jquery基本筛选器</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="github-card">
+<p class="asidetitle">Github 名片</p>
+<div class="github-card" data-github="slvanass" data-theme="medium"></div>
+<script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
+</div>
+
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+  
+
+  
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://coderq.com" target="_blank" title="一个面向程序员交流分享的新一代社区">码农圈</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://wuchong.me" target="_blank" title="Jark&#39;s Blog">Jark&#39;s Blog</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m liuwc <br/>
+			Welcome to my blog</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/2176287895" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/slvanass" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2018 
+		
+		<a href="/about" target="_blank" title="liuwc">liuwc</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?e6d1f421bbc9962127a50488f9ed37d1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>
