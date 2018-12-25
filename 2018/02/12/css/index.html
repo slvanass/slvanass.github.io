@@ -1,0 +1,466 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>css基础 | liuwc&#39;s blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="liuwc">
+    
+
+    
+    <meta name="description" content="css注释12html注释:&amp;lt;!--注释语句--&amp;gt;css注释:/*注释语句*/ 如何引用css样式1234行内样式(内联样式)内部样式表(嵌入样式)外部样式表(link链入)导入式 css内部样式内部样式(嵌入样式),把css样式代码写在:1234&amp;lt;style type=&quot;text/css&quot;&amp;gt;   样式。。。&amp;lt;/style&amp;gt;说明：&amp;lt;style&amp;gt;要放在">
+<meta property="og:type" content="article">
+<meta property="og:title" content="css基础">
+<meta property="og:url" content="http://www.liuwc.com/2018/02/12/css/index.html">
+<meta property="og:site_name" content="liuwc&#39;s blog">
+<meta property="og:description" content="css注释12html注释:&amp;lt;!--注释语句--&amp;gt;css注释:/*注释语句*/ 如何引用css样式1234行内样式(内联样式)内部样式表(嵌入样式)外部样式表(link链入)导入式 css内部样式内部样式(嵌入样式),把css样式代码写在:1234&amp;lt;style type=&quot;text/css&quot;&amp;gt;   样式。。。&amp;lt;/style&amp;gt;说明：&amp;lt;style&amp;gt;要放在">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-12-21T09:48:25.389Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="css基础">
+<meta name="twitter:description" content="css注释12html注释:&amp;lt;!--注释语句--&amp;gt;css注释:/*注释语句*/ 如何引用css样式1234行内样式(内联样式)内部样式表(嵌入样式)外部样式表(link链入)导入式 css内部样式内部样式(嵌入样式),把css样式代码写在:1234&amp;lt;style type=&quot;text/css&quot;&amp;gt;   样式。。。&amp;lt;/style&amp;gt;说明：&amp;lt;style&amp;gt;要放在">
+
+    
+    <link rel="alternative" href="/atom.xml" title="liuwc&#39;s blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="liuwc&#39;s blog">liuwc&#39;s blog</a></h1>
+				<h2 class="blog-motto"></h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="hidden" name="q" value="site:www.liuwc.com">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2018/02/12/css/" title="css基础" itemprop="url">css基础</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="liuwc" target="_blank" itemprop="author">liuwc</a>
+		
+  <p class="article-time">
+    <time datetime="2018-02-12T01:58:10.000Z" itemprop="datePublished"> Published 2018-02-12</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#css注释"><span class="toc-number">1.</span> <span class="toc-text">css注释</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#如何引用css样式"><span class="toc-number">2.</span> <span class="toc-text">如何引用css样式</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#css内部样式"><span class="toc-number">2.1.</span> <span class="toc-text">css内部样式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#css外部样式"><span class="toc-number">2.2.</span> <span class="toc-text">css外部样式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#css导入式"><span class="toc-number">2.3.</span> <span class="toc-text">css导入式</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#css使用方法优先级"><span class="toc-number">3.</span> <span class="toc-text">css使用方法优先级</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#css选择器"><span class="toc-number">4.</span> <span class="toc-text">css选择器</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#后代选择器"><span class="toc-number">5.</span> <span class="toc-text">后代选择器</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#伪类"><span class="toc-number">6.</span> <span class="toc-text">伪类</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#链接伪类"><span class="toc-number">6.1.</span> <span class="toc-text">链接伪类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#伪类-hover和active"><span class="toc-number">6.2.</span> <span class="toc-text">伪类:hover和active</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#伪类-hover和-active兼容"><span class="toc-number">6.3.</span> <span class="toc-text">伪类:hover和:active兼容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#链接伪类的顺序"><span class="toc-number">6.4.</span> <span class="toc-text">链接伪类的顺序</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#important规则"><span class="toc-number">7.</span> <span class="toc-text">!important规则</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#css优先级总结"><span class="toc-number">8.</span> <span class="toc-text">css优先级总结</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CSS样式命名"><span class="toc-number">9.</span> <span class="toc-text">CSS样式命名</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#css样式命名规则"><span class="toc-number">9.1.</span> <span class="toc-text">css样式命名规则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#常用的css样式命名"><span class="toc-number">9.2.</span> <span class="toc-text">常用的css样式命名</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#css字体和文本样式"><span class="toc-number">10.</span> <span class="toc-text">css字体和文本样式</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#文字样式属性"><span class="toc-number">10.1.</span> <span class="toc-text">文字样式属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#text-align"><span class="toc-number">10.2.</span> <span class="toc-text">text-align</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#line-height-属性"><span class="toc-number">10.3.</span> <span class="toc-text">line-height 属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#vertical-align属性"><span class="toc-number">10.4.</span> <span class="toc-text">vertical-align属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文本样式"><span class="toc-number">10.5.</span> <span class="toc-text">文本样式</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#z-index"><span class="toc-number">11.</span> <span class="toc-text">z-index</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#css背景样式"><span class="toc-number">12.</span> <span class="toc-text">css背景样式</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#背景样式"><span class="toc-number">12.1.</span> <span class="toc-text">背景样式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#背景缩写"><span class="toc-number">12.2.</span> <span class="toc-text">背景缩写</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#列表样式"><span class="toc-number">12.3.</span> <span class="toc-text">列表样式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#列表样式缩写"><span class="toc-number">12.4.</span> <span class="toc-text">列表样式缩写</span></a></li></ol></li></ol>
+		
+		</div>
+		
+		<h1 id="css注释"><a href="#css注释" class="headerlink" title="css注释"></a>css注释</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">html注释:&lt;!--注释语句--&gt;</span><br><span class="line">css注释:/*注释语句*/</span><br></pre></td></tr></table></figure>
+<h1 id="如何引用css样式"><a href="#如何引用css样式" class="headerlink" title="如何引用css样式"></a>如何引用css样式</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">行内样式(内联样式)</span><br><span class="line">内部样式表(嵌入样式)</span><br><span class="line">外部样式表(link链入)</span><br><span class="line">导入式</span><br></pre></td></tr></table></figure>
+<h2 id="css内部样式"><a href="#css内部样式" class="headerlink" title="css内部样式"></a>css内部样式</h2><p>内部样式(嵌入样式),把css样式代码写在:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=<span class="string">"text/css"</span>&gt;</span><br><span class="line">   样式。。。</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">说明：&lt;style&gt;要放在&lt;head&gt;标签之间</span><br></pre></td></tr></table></figure></p>
+<h2 id="css外部样式"><a href="#css外部样式" class="headerlink" title="css外部样式"></a>css外部样式</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">外部样式表，把css样式代码写在独立的一个文件中</span><br><span class="line">扩展名：css文件名.css</span><br><span class="line">引入外部文件：</span><br><span class="line">&lt;link href=&quot;XX.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;</span><br><span class="line">说明:&lt;link&gt;要放在&lt;head&gt;标签之间</span><br></pre></td></tr></table></figure>
+<h2 id="css导入式"><a href="#css导入式" class="headerlink" title="css导入式"></a>css导入式</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"> @import &quot;外部css样式&quot;</span><br><span class="line"> 说明:@importx写在&lt;style&gt;标签内最开始</span><br><span class="line"> 使用url(url)和直接使用url需要注意的地方：</span><br><span class="line">示例代码：</span><br><span class="line"></span><br><span class="line">@import url(&quot;global.css&quot;);</span><br><span class="line">@import url(global.css);</span><br><span class="line">@import &quot;global.css&quot;;</span><br><span class="line">以上3种方式都有效。当使用url(url)的方式时，包住路径的引号可有可无；当直接使用url时，包住路径的引号必须保留。</span><br><span class="line"></span><br><span class="line">指定媒体查询：</span><br><span class="line">示例代码：</span><br><span class="line"></span><br><span class="line">@import url(example.css) screen and (min-width:800px);</span><br><span class="line">@import url(example.css) screen and (width:800px),(color);</span><br><span class="line">@import url(example.css) screen and (min-device-width:500px) and (max-device-width:1024px);</span><br></pre></td></tr></table></figure>
+<h1 id="css使用方法优先级"><a href="#css使用方法优先级" class="headerlink" title="css使用方法优先级"></a>css使用方法优先级</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">行内样式&gt;内部样式&gt;外部样式</span><br><span class="line">说明:</span><br><span class="line">    1.链入外部样式表与内部样式表之间的优先级取决于所处位置的先后</span><br><span class="line">    2.最后定义的优先级最高(就近原则)</span><br></pre></td></tr></table></figure>
+<h1 id="css选择器"><a href="#css选择器" class="headerlink" title="css选择器"></a>css选择器</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">标签选择器 全局选择器 类选择器 群组选择器 ID选择器 后代选择器</span><br></pre></td></tr></table></figure>
+<h1 id="后代选择器"><a href="#后代选择器" class="headerlink" title="后代选择器"></a>后代选择器</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">后代选择器可以多层</span><br><span class="line">p a em&#123;......&#125;/*p标签中的em*/</span><br><span class="line">p1 em&#123;......&#125;/*id为p1的标签中的em*/</span><br><span class="line">p .red a em&#123;......&#125;/*class为red的p标签中的a标签中的em*/</span><br></pre></td></tr></table></figure>
+<h1 id="伪类"><a href="#伪类" class="headerlink" title="伪类"></a>伪类</h1><h2 id="链接伪类"><a href="#链接伪类" class="headerlink" title="链接伪类"></a>链接伪类</h2><p>链接的4种状态:激活状态、已访问状态，未访问状态和鼠标悬停状态。<br>伪类|说明<br>-|-|-<br>:link|未访问的链接<br>:visited|已访问的链接<br>:hover|鼠标悬停状态<br>:active|激活的链接</p>
+<h2 id="伪类-hover和active"><a href="#伪类-hover和active" class="headerlink" title="伪类:hover和active"></a>伪类:hover和active</h2><p>1.:hover用于访问的鼠标经过某个元素时<br>2.:active用于一个元素被激活时(即按下鼠标之后放开鼠标之前的时间)</p>
+<h2 id="伪类-hover和-active兼容"><a href="#伪类-hover和-active兼容" class="headerlink" title="伪类:hover和:active兼容"></a>伪类:hover和:active兼容</h2><p>IE6及更早版本，支持<a>元素的4种状态<br>IE6浏览器不支持其他元素的:hover和:active</a></p>
+<h2 id="链接伪类的顺序"><a href="#链接伪类的顺序" class="headerlink" title="链接伪类的顺序"></a>链接伪类的顺序</h2><p>:Link &gt; :Visited &gt; :Hover &gt; :Active<br>说明：<br>    1.a:hover 必须置于a:link和a:visited之后,才有效<br>    2.a:active 必须置于a:hover之后,才有效<br>    3.伪类名称对大小写不敏感</p>
+<h1 id="important规则"><a href="#important规则" class="headerlink" title="!important规则"></a>!important规则</h1><p>1.可调整样式规则的优先级<br>2.添加在样式规则之后，中间用空格隔开</p>
+<h1 id="css优先级总结"><a href="#css优先级总结" class="headerlink" title="css优先级总结"></a>css优先级总结</h1><p>1.!important声明高<br>2.css使用方法的优先级<br>行内样式&gt;内部样式&gt;外部样式<br>注：link链入外部样式和style内部样式优先级，取决于先后顺序。<br>3.样式表中优先级<br>Id选择器&gt;class选择器&gt;标签选择器&gt;通配符<br>权值相同：就近原则   权值不同：使用权值高的</p>
+<h1 id="CSS样式命名"><a href="#CSS样式命名" class="headerlink" title="CSS样式命名"></a>CSS样式命名</h1><h2 id="css样式命名规则"><a href="#css样式命名规则" class="headerlink" title="css样式命名规则"></a>css样式命名规则</h2><p>1.采用英文字母、数字以及”-“和”<em>“命名<br>2.以小写字母开头，不能以数字和”-“、”</em>“开头<br>3.命名形式:单字，连字符，下划线和驼峰<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*一个单词，采用全部小写方式*/</span></span><br><span class="line">.special&#123;......&#125;</span><br><span class="line"><span class="comment">/*多个单词*/</span></span><br><span class="line"><span class="comment">/*驼峰写法，除第一个单词外，其他首写字母大写*/</span></span><br><span class="line">.mainTitle&#123;......&#125;</span><br><span class="line"><span class="comment">/*采用"-"连接符*/</span></span><br><span class="line">.main-title&#123;......&#125;</span><br><span class="line"><span class="comment">/*采用"_"下划线*/</span></span><br><span class="line">.main_title&#123;......&#125;</span><br></pre></td></tr></table></figure></p>
+<p>4.使用有意义命名</p>
+<h2 id="常用的css样式命名"><a href="#常用的css样式命名" class="headerlink" title="常用的css样式命名"></a>常用的css样式命名</h2><p>1)页面结构<br>页头:header   导航:nav    页面主体:main   侧栏:sidebar<br>页尾:footer   栏目:column   内容:content/container  页面外围控制:wrapper<br>容器:container    左右中:left right center<br>2)导航<br>导航:nav    左导航:leftsidebar     主导航:mainnav     右导航:rightsidebar<br>子导航:subnav    菜单:menu     顶导航:topnav    子菜单:submenu<br>边导航:sidebar     标题:title    摘要:summary<br>3)功能<br>标志:logo     注册:register     广告:banner     搜索:search<br>登录:login      功能区:shop      登陆条:loginbar    标题:title</p>
+<h1 id="css字体和文本样式"><a href="#css字体和文本样式" class="headerlink" title="css字体和文本样式"></a>css字体和文本样式</h1><h2 id="文字样式属性"><a href="#文字样式属性" class="headerlink" title="文字样式属性"></a>文字样式属性</h2><p>1.字体:font-family(Serif、Sans-serif、Monospace、Cursive、Fantasy)<br>2.文字大小:font-size<br>3.文字颜色:font-color(颜色名|十六进制|RGB)<br>4.文字粗细:font-weight(normal|bold|bolder|lighter|100-900) 400等同于normal,而700等于bold<br>5.文字样式:font-style(normal|italic(斜体)|oblique(倾斜))<br>6.字体变形:font-variant(font-variant:normal|small-caps)</p>
+<h2 id="text-align"><a href="#text-align" class="headerlink" title="text-align"></a>text-align</h2><p>text-align:left|right|center|justify 注:该属性对块级元素设置有效</p>
+<h2 id="line-height-属性"><a href="#line-height-属性" class="headerlink" title="line-height 属性"></a>line-height 属性</h2><p>line-height:长度值|百分比 说明:一行文字的高度，行高指文本行的基线间的距离。</p>
+<h2 id="vertical-align属性"><a href="#vertical-align属性" class="headerlink" title="vertical-align属性"></a>vertical-align属性</h2><p>vertical_align: baseline | sub | super | top | text-top | middle | bottom | text-bottom 长度|百分比</p>
+<h2 id="文本样式"><a href="#文本样式" class="headerlink" title="文本样式"></a>文本样式</h2><p>word-spacing 设置元素内单词之间间距<br>letter-spacing 设置元素内字母之间间距<br>text-transform 设置元素内文本的大小写(capitalize |uppercase | lowercase |none)<br>text-decotation 设置元素内文本的装饰(underline | overline | line-through | blink | none)</p>
+<h1 id="z-index"><a href="#z-index" class="headerlink" title="z-index"></a>z-index</h1><p>1.z-index为auto的元素不参与层级比较<br>2.z-index为负值，元素被普通流中的元素覆盖</p>
+<h1 id="css背景样式"><a href="#css背景样式" class="headerlink" title="css背景样式"></a>css背景样式</h1><h2 id="背景样式"><a href="#背景样式" class="headerlink" title="背景样式"></a>背景样式</h2><p>1.background-color(颜色| transparent) 设置元素的背景颜色<br>  1) transparent是全透明黑色(black)的速记法，类似rgba(0,0,0,0)这样的值<br>  2) 颜色值(颜色名|RGB|十六进制)<br>  3) 背景区包括内容、内边距(padding)和边框、不包含外边距(margin)<br>2.background-image(url|none) 把图像设置为背景<br>  1) url地址可以是相对地址也可以是绝对地址<br>  2) 元素的背景占据了元素的全部尺寸,包含内边距和边框，但不包括外边距。<br>  3) 默认地，背景图片位于元素的左上角，并在水平和垂直方向上重复。<br>3.background-position (百分比|值|top|right|bottom|left|center)设置背景图片的起始位置<br>4.background-attachment(scroll | fixed) 背景图像死否固定或者随着页面的其余部分滚动<br>  1) sroll : 默认值，背景图片随滚动条滚动<br>  2) fixed : 当页面的其余部分滚动时,背景图片不会移动<br>5.background-repeat(repeat | no-repeat | repeat-x | repeat-y) 设置背景图像是否重复以及如何重复<br>6.background 简写属性，作用是将背景属性设置在一个声明中。</p>
+<h2 id="背景缩写"><a href="#背景缩写" class="headerlink" title="背景缩写"></a>背景缩写</h2><p>background:[background-color][background-image][background-repeat][background-attachment][background-position][]<br>各值之间用空格分隔,部分先后顺序</p>
+<h2 id="列表样式"><a href="#列表样式" class="headerlink" title="列表样式"></a>列表样式</h2><p>1.list-style-type(关键字|none) 设置列表项标志的类型。<br>无序列表                 有序列表<br>none|无标记            none|无标记<br>disc|实心的圆点        decimal|从1开始的整数<br>circle|空心的圆点      lower-roman|小写罗马数字<br>square|实心的方块      upper-roman|大写罗马数字<br>                      lower-alpha|小写英文字母<br>                      upper-alpha|大写英文字母</p>
+<p>2.list-style-image(url|none) 将图像设置为列表项标志。<br>3.list-style-position(inside|outside) 设置列表中列表项标志的位置。<br>  1)inside:列表项目标记放置在文本以内，且环绕文本根据标记对齐。<br>  2)outside:默认值,列表项目标记放置在文本意外，且环绕文本不根据标记对齐。<br>4.list-style 简写属性,用于把所有列表的属性设置于一个声明中。</p>
+<h2 id="列表样式缩写"><a href="#列表样式缩写" class="headerlink" title="列表样式缩写"></a>列表样式缩写</h2><p>list-style:list-style-type/list-style-position/list-style-image<br>说明:1.值之间用空格分隔割<br>2.顺序不固定<br>3.list-style-image会覆盖list-style-type的设置</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://www.liuwc.com/2018/02/12/css/" data-title="css基础 | liuwc&#39;s blog" data-tsina="" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2018/02/12/hxjz/" title="Java核心机制">
+  <strong>上一篇：</strong><br/>
+  <span>
+  Java核心机制</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2018/02/12/container/"  title="容器">
+ <strong>下一篇：</strong><br/> 
+ <span>容器
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#css注释"><span class="toc-number">1.</span> <span class="toc-text">css注释</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#如何引用css样式"><span class="toc-number">2.</span> <span class="toc-text">如何引用css样式</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#css内部样式"><span class="toc-number">2.1.</span> <span class="toc-text">css内部样式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#css外部样式"><span class="toc-number">2.2.</span> <span class="toc-text">css外部样式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#css导入式"><span class="toc-number">2.3.</span> <span class="toc-text">css导入式</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#css使用方法优先级"><span class="toc-number">3.</span> <span class="toc-text">css使用方法优先级</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#css选择器"><span class="toc-number">4.</span> <span class="toc-text">css选择器</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#后代选择器"><span class="toc-number">5.</span> <span class="toc-text">后代选择器</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#伪类"><span class="toc-number">6.</span> <span class="toc-text">伪类</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#链接伪类"><span class="toc-number">6.1.</span> <span class="toc-text">链接伪类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#伪类-hover和active"><span class="toc-number">6.2.</span> <span class="toc-text">伪类:hover和active</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#伪类-hover和-active兼容"><span class="toc-number">6.3.</span> <span class="toc-text">伪类:hover和:active兼容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#链接伪类的顺序"><span class="toc-number">6.4.</span> <span class="toc-text">链接伪类的顺序</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#important规则"><span class="toc-number">7.</span> <span class="toc-text">!important规则</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#css优先级总结"><span class="toc-number">8.</span> <span class="toc-text">css优先级总结</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CSS样式命名"><span class="toc-number">9.</span> <span class="toc-text">CSS样式命名</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#css样式命名规则"><span class="toc-number">9.1.</span> <span class="toc-text">css样式命名规则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#常用的css样式命名"><span class="toc-number">9.2.</span> <span class="toc-text">常用的css样式命名</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#css字体和文本样式"><span class="toc-number">10.</span> <span class="toc-text">css字体和文本样式</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#文字样式属性"><span class="toc-number">10.1.</span> <span class="toc-text">文字样式属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#text-align"><span class="toc-number">10.2.</span> <span class="toc-text">text-align</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#line-height-属性"><span class="toc-number">10.3.</span> <span class="toc-text">line-height 属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#vertical-align属性"><span class="toc-number">10.4.</span> <span class="toc-text">vertical-align属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文本样式"><span class="toc-number">10.5.</span> <span class="toc-text">文本样式</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#z-index"><span class="toc-number">11.</span> <span class="toc-text">z-index</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#css背景样式"><span class="toc-number">12.</span> <span class="toc-text">css背景样式</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#背景样式"><span class="toc-number">12.1.</span> <span class="toc-text">背景样式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#背景缩写"><span class="toc-number">12.2.</span> <span class="toc-text">背景缩写</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#列表样式"><span class="toc-number">12.3.</span> <span class="toc-text">列表样式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#列表样式缩写"><span class="toc-number">12.4.</span> <span class="toc-text">列表样式缩写</span></a></li></ol></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  
+<div class="github-card">
+<p class="asidetitle">Github Card</p>
+<div class="github-card" data-github="slvanass" data-theme="medium"></div>
+<script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
+</div>
+
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+</div>
+
+  
+
+  
+
+  <div class="linkslist">
+  <p class="asidetitle">Links</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://coderq.com" target="_blank" title="一个面向程序员交流分享的新一代社区">码农圈</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://wuchong.me" target="_blank" title="Jark&#39;s Blog">Jark&#39;s Blog</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m liuwc <br/>
+			Welcome to my blog</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/2176287895" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/slvanass" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2018 
+		
+		<a href="/about" target="_blank" title="liuwc">liuwc</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?e6d1f421bbc9962127a50488f9ed37d1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>
